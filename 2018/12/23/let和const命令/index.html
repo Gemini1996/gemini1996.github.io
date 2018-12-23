@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>let和const命令 | Gemini1996的博客</title>
+  
+  <meta name="HandheldFriendly" content="True">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="alternate" href="/atom.xml" title="Gemini1996的博客">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="stylesheet" href="/live2d/css/live2d.css">
+
+  <link href="//cdn.bootcss.com/node-waves/0.7.5/waves.min.css" rel="stylesheet">
+
+  <!-- style.css -->
+  
+    <link rel="stylesheet" href="/style.css">
+  
+
+  <!-- fontawesome -->
+  
+    <link rel="stylesheet" href="/fontawesome-free-5.6.3-web/css/all.min.css">
+  
+
+  <!-- google_fonts -->
+  
+
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+  
+</head>
+
+<body>
+    <div id="loading-bar-wrapper">
+  <div id="loading-bar" class="pure"></div>
+</div>
+
+    <script>setLoadingBarProgress(20)</script>
+    <header class="l_header pure">
+	<div class="wrapper">
+		<div class="nav-main container container--flex">
+      <a class="logo flat-box" href="/">
+        
+          Gemini1996的博客
+        
+      </a>
+			<div class="menu">
+				<ul class="h-list">
+          
+  					
+  						<li>
+								<a id="home" class="nav flat-box" href="/">
+									<i class="fas fa-home fa-fw"></i>&nbsp;首页
+								</a>
+							</li>
+      			
+  						<li>
+								<a id="https:gitee.comyinzhmprojects" class="nav flat-box" href="https://gitee.com/yinzhm/projects">
+									<i class="fas fa-rss fa-fw"></i>&nbsp;项目
+								</a>
+							</li>
+      			
+  						<li>
+								<a id="archives" class="nav flat-box" href="/archives/">
+									<i class="fas fa-archive fa-fw"></i>&nbsp;时间轴
+								</a>
+							</li>
+      			
+  						<li>
+								<a id="about" class="nav flat-box" href="/about/">
+									<i class="fas fa-user fa-fw"></i>&nbsp;关于我
+								</a>
+							</li>
+      			
+      		
+				</ul>
+			</div>
+
+			
+				<div class="m_search">
+					<form name="searchform" class="form u-search-form">
+						<input type="text" class="input u-search-input" placeholder="搜索">
+						<span class="icon"><i class="fas fa-search fa-fw"></i></span>
+					</form>
+				</div>
+			
+			<ul class="switcher h-list">
+				
+					<li class="s-search"><a class="fas fa-search fa-fw" href="javascript:void(0)"></a></li>
+				
+				<li class="s-menu"><a class="fas fa-bars fa-fw" href="javascript:void(0)"></a></li>
+			</ul>
+		</div>
+
+		<div class="nav-sub container container--flex">
+			<a class="logo flat-box"></a>
+			<ul class="switcher h-list">
+				<li class="s-comment"><a class="flat-btn fas fa-comments fa-fw" href="javascript:void(0)"></a></li>
+				<li class="s-top"><a class="flat-btn fas fa-arrow-up fa-fw" href="javascript:void(0)"></a></li>
+				<li class="s-toc"><a class="flat-btn fas fa-list fa-fw" href="javascript:void(0)"></a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+	<aside class="menu-phone">
+    <header>
+		<nav class="menu">
+      <ul>
+          
+              
+                  <li>
+										<a id="home" class="nav flat-box" href="/">
+											<i class="fas fa-home fa-fw"></i>&nbsp;首页
+										</a>
+                  </li>
+              
+                  <li>
+										<a id="https:gitee.comyinzhmprojects" class="nav flat-box" href="https://gitee.com/yinzhm/projects">
+											<i class="fas fa-rss fa-fw"></i>&nbsp;项目
+										</a>
+                  </li>
+              
+                  <li>
+										<a id="archives" class="nav flat-box" href="/archives/">
+											<i class="fas fa-archive fa-fw"></i>&nbsp;时间轴
+										</a>
+                  </li>
+              
+                  <li>
+										<a id="about" class="nav flat-box" href="/about/">
+											<i class="fas fa-user fa-fw"></i>&nbsp;关于我
+										</a>
+                  </li>
+              
+       
+      </ul>
+		</nav>
+    </header>
+	</aside>
+
+    <script>setLoadingBarProgress(40);</script>
+    <div class="l_body">
+    <div class='container clearfix'>
+        <div class='l_main'>
+            <article id="post" class="post white-box article-type-post" itemscope="" itemprop="blogPost">
+  
+<section class="meta">
+  
+  <div class="meta" id="header-meta">
+    
+      
+          <h1 class="title">let和const命令</h1>
+      
+    
+
+    
+      <time class="time">
+        <i class="fas fa-calendar-alt fa-fw" aria-hidden="true"></i>
+        2018-12-23
+      </time>
+    
+
+    
+      
+    
+    <div class="cats">
+        <i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>
+        <a class="categories" href="/categories/ES6/">ES6</a>
+    </div>
+
+
+    
+
+    
+      
+        <div class="browse busuanzi"><i class="fas fa-eye fa-fw" aria-hidden="true"></i>
+          <span id="busuanzi_value_page_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span>
+        </div>
+      
+    
+
+  </div>
+</section>
+
+    <section class="article typo">
+
+        <div class="article-entry" itemprop="articleBody">
+            <p>ES6新增的let和const命令<br><a id="more"></a></p>
+<h2 id="1、let命令"><a href="#1、let命令" class="headerlink" title="1、let命令"></a>1、let命令</h2><h3 id="基本用法"><a href="#基本用法" class="headerlink" title="基本用法"></a>基本用法</h3><p>let命令，用来声明变量。用法类似于var，但是所声明的变量，只在let命令所在的代码块内有效。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">  <span class="keyword">let</span> a = <span class="number">10</span>;</span><br><span class="line">  <span class="keyword">var</span> b = <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">a <span class="comment">// ReferenceError: a is not defined.</span></span><br><span class="line">b <span class="comment">// 1</span></span><br></pre></td></tr></table></figure></p>
+<p>for循环的计数器，就很合适使用let命令。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = [];</span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="number">10</span>; i++) &#123;</span><br><span class="line">  a[i] = <span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(i);</span><br><span class="line">  &#125;;</span><br><span class="line">&#125;</span><br><span class="line">a[<span class="number">6</span>](); <span class="comment">// 6</span></span><br></pre></td></tr></table></figure></p>
+<p>另外，for循环还有一个特别之处，就是设置循环变量的那部分是一个父作用域，而循环体内部是一个单独的子作用域。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span> (<span class="keyword">let</span> i = <span class="number">0</span>; i &lt; <span class="number">3</span>; i++) &#123;</span><br><span class="line">  <span class="keyword">let</span> i = <span class="string">'abc'</span>;</span><br><span class="line">  <span class="built_in">console</span>.log(i);</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// abc</span></span><br><span class="line"><span class="comment">// abc</span></span><br><span class="line"><span class="comment">// abc</span></span><br></pre></td></tr></table></figure></p>
+<h3 id="不存在变量提升"><a href="#不存在变量提升" class="headerlink" title="不存在变量提升"></a>不存在变量提升</h3><p>var命令会发生”变量提升“现象，即变量可以在声明之前使用，值为undefined。<br>let命令所声明的变量一定要在声明后使用，否则报错<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// var 的情况</span></span><br><span class="line"><span class="built_in">console</span>.log(foo); <span class="comment">// 输出undefined</span></span><br><span class="line"><span class="keyword">var</span> foo = <span class="number">2</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">// let 的情况</span></span><br><span class="line"><span class="built_in">console</span>.log(bar); <span class="comment">// 报错ReferenceError</span></span><br><span class="line"><span class="keyword">let</span> bar = <span class="number">2</span>;</span><br></pre></td></tr></table></figure></p>
+<h3 id="暂时性死区（temporal-dead-zone，简称TDZ）"><a href="#暂时性死区（temporal-dead-zone，简称TDZ）" class="headerlink" title="暂时性死区（temporal dead zone，简称TDZ）"></a>暂时性死区（temporal dead zone，简称TDZ）</h3><p>只要块级作用域内存在let命令，它所声明的变量就“绑定”（binding）这个区域，不再受外部的影响。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> tmp = <span class="number">123</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">  tmp = <span class="string">'abc'</span>; <span class="comment">// ReferenceError</span></span><br><span class="line">  <span class="keyword">let</span> tmp;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>上面代码中，存在全局变量tmp，但是块级作用域内let又声明了一个局部变量tmp，导致后者绑定这个块级作用域，所以在let声明变量前，对tmp赋值会报错。<br>ES6明确规定，如果区块中存在let和const命令，这个区块对这些命令声明的变量，从一开始就形成了封闭作用域。凡是在声明之前就使用这些变量，就会报错。<br>总之，在代码块内，使用let命令声明变量之前，该变量都是不可用的。</p>
+<h3 id="不能重复声明"><a href="#不能重复声明" class="headerlink" title="不能重复声明"></a>不能重复声明</h3><p>let不允许在相同作用域内，重复声明同一个变量。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 报错</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">func</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> a = <span class="number">10</span>;</span><br><span class="line">  <span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 报错</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">func</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> a = <span class="number">10</span>;</span><br><span class="line">  <span class="keyword">let</span> a = <span class="number">1</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="2、块级作用域"><a href="#2、块级作用域" class="headerlink" title="2、块级作用域"></a>2、块级作用域</h2><p>ES5 只有全局作用域和函数作用域，没有块级作用域，这带来很多不合理的场景。<br>内层变量可能会覆盖外层变量<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> tmp = <span class="keyword">new</span> <span class="built_in">Date</span>();</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(tmp);</span><br><span class="line">  <span class="keyword">if</span> (<span class="literal">false</span>) &#123;</span><br><span class="line">    <span class="keyword">var</span> tmp = <span class="string">'hello world'</span>;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">f(); <span class="comment">// undefined</span></span><br></pre></td></tr></table></figure></p>
+<p>用来计数的循环变量泄露为全局变量<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> s = <span class="string">'hello'</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; s.length; i++) &#123;</span><br><span class="line">  <span class="built_in">console</span>.log(s[i]);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="built_in">console</span>.log(i); <span class="comment">// 5</span></span><br></pre></td></tr></table></figure></p>
+<p>let实际上为 JavaScript 新增了块级作用域。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f1</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">let</span> n = <span class="number">5</span>;</span><br><span class="line">  <span class="keyword">if</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">    <span class="keyword">let</span> n = <span class="number">10</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  <span class="built_in">console</span>.log(n); <span class="comment">// 5</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>ES6 允许块级作用域的任意嵌套。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&#123;&#123;&#123;&#123;&#123;<span class="keyword">let</span> insane = <span class="string">'Hello World'</span>&#125;&#125;&#125;&#125;&#125;;</span><br></pre></td></tr></table></figure></p>
+<p>块级作用域的出现，实际上使得获得广泛应用的立即执行函数表达式（IIFE）不再必要了。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// IIFE 写法</span></span><br><span class="line">(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">var</span> tmp = ...;</span><br><span class="line">  ...</span><br><span class="line">&#125;());</span><br><span class="line"></span><br><span class="line"><span class="comment">// 块级作用域写法</span></span><br><span class="line">&#123;</span><br><span class="line">  <span class="keyword">let</span> tmp = ...;</span><br><span class="line">  ...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<h3 id="块级作用域与函数声明"><a href="#块级作用域与函数声明" class="headerlink" title="块级作用域与函数声明"></a>块级作用域与函数声明</h3><p>ES5 规定，函数只能在顶层作用域和函数作用域之中声明，不能在块级作用域声明。<br>ES6 引入了块级作用域，明确允许在块级作用域之中声明函数。ES6 规定，块级作用域之中，函数声明语句的行为类似于let，在块级作用域之外不可引用。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>) </span>&#123; <span class="built_in">console</span>.log(<span class="string">'I am outside!'</span>); &#125;</span><br><span class="line"></span><br><span class="line">(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="keyword">if</span> (<span class="literal">false</span>) &#123;</span><br><span class="line">    <span class="comment">// 重复声明一次函数f</span></span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>) </span>&#123; <span class="built_in">console</span>.log(<span class="string">'I am inside!'</span>); &#125;</span><br><span class="line">  &#125;</span><br><span class="line"></span><br><span class="line">  f();</span><br><span class="line">&#125;());</span><br></pre></td></tr></table></figure></p>
+<p>上面代码在 ES5 中运行，会得到“I am inside!”，因为在if内声明的函数f会被提升到函数头部，实际运行的代码如下。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// ES5 环境</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>) </span>&#123; <span class="built_in">console</span>.log(<span class="string">'I am outside!'</span>); &#125;</span><br><span class="line"></span><br><span class="line">(<span class="function"><span class="keyword">function</span> (<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>) </span>&#123; <span class="built_in">console</span>.log(<span class="string">'I am inside!'</span>); &#125;</span><br><span class="line">  <span class="keyword">if</span> (<span class="literal">false</span>) &#123;</span><br><span class="line">  &#125;</span><br><span class="line">  f();</span><br><span class="line">&#125;());</span><br></pre></td></tr></table></figure></p>
+<p>ES6 的块级作用域允许声明函数的规则，只在使用大括号的情况下成立，如果没有使用大括号，就会报错。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 不报错</span></span><br><span class="line"><span class="meta">'use strict'</span>;</span><br><span class="line"><span class="keyword">if</span> (<span class="literal">true</span>) &#123;</span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>) </span>&#123;&#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 报错</span></span><br><span class="line"><span class="meta">'use strict'</span>;</span><br><span class="line"><span class="keyword">if</span> (<span class="literal">true</span>)</span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">f</span>(<span class="params"></span>) </span>&#123;&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="3、const命令"><a href="#3、const命令" class="headerlink" title="3、const命令"></a>3、const命令</h2><h3 id="基本语法"><a href="#基本语法" class="headerlink" title="基本语法"></a>基本语法</h3><p>const声明一个只读的常量。一旦声明，常量的值就不能改变<br>const声明的变量不得改变值，这意味着，const一旦声明变量，就必须立即初始化，不能留到以后赋值。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> foo;</span><br><span class="line"><span class="comment">// SyntaxError: Missing initializer in const declaration</span></span><br></pre></td></tr></table></figure></p>
+<p>const的作用域与let命令相同：只在声明所在的块级作用域内有效。<br>const命令声明的常量也是不提升，同样存在暂时性死区，只能在声明的位置后面使用。<br>const实际上保证的，并不是变量的值不得改动，而是变量指向的那个内存地址所保存的数据不得改动。对于简单类型的数据（数值、字符串、布尔值），值就保存在变量指向的那个内存地址，因此等同于常量。但对于复合类型的数据（主要是对象和数组），变量指向的内存地址，保存的只是一个指向实际数据的指针，const只能保证这个指针是固定的（即总是指向另一个固定的地址），至于它指向的数据结构是不是可变的，就完全不能控制了。因此，将一个对象声明为常量必须非常小心。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> foo = &#123;&#125;;</span><br><span class="line"></span><br><span class="line"><span class="comment">// 为 foo 添加一个属性，可以成功</span></span><br><span class="line">foo.prop = <span class="number">123</span>;</span><br><span class="line">foo.prop <span class="comment">// 123</span></span><br><span class="line"></span><br><span class="line"><span class="comment">// 将 foo 指向另一个对象，就会报错</span></span><br><span class="line">foo = &#123;&#125;; <span class="comment">// TypeError: "foo" is read-only</span></span><br></pre></td></tr></table></figure></p>
+<p>上面代码中，常量foo储存的是一个地址，这个地址指向一个对象。不可变的只是这个地址，即不能把foo指向另一个地址，但对象本身是可变的，所以依然可以为其添加新属性。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> a = [];</span><br><span class="line">a.push(<span class="string">'Hello'</span>); <span class="comment">// 可执行</span></span><br><span class="line">a.length = <span class="number">0</span>;    <span class="comment">// 可执行</span></span><br><span class="line">a = [<span class="string">'Dave'</span>];    <span class="comment">// 报错</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="4、顶级对象的属性"><a href="#4、顶级对象的属性" class="headerlink" title="4、顶级对象的属性"></a>4、顶级对象的属性</h2><p>顶层对象，在浏览器环境指的是window对象，在Node指的是global对象。ES5之中，顶层对象的属性与全局变量是等价的。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">window</span>.a = <span class="number">1</span>;</span><br><span class="line">a <span class="comment">// 1</span></span><br><span class="line"></span><br><span class="line">a = <span class="number">2</span>;</span><br><span class="line"><span class="built_in">window</span>.a <span class="comment">// 2</span></span><br></pre></td></tr></table></figure></p>
+<p>ES6一方面规定，为了保持兼容性，var命令和function命令声明的全局变量，依旧是顶层对象的属性；另一方面规定，let命令、const命令、class命令声明的全局变量，不属于顶层对象的属性。也就是说，从 ES6 开始，全局变量将逐步与顶层对象的属性脱钩。<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> a = <span class="number">1</span>;</span><br><span class="line"><span class="comment">// 如果在 Node 的 REPL 环境，可以写成 global.a</span></span><br><span class="line"><span class="comment">// 或者采用通用方法，写成 this.a</span></span><br><span class="line"><span class="built_in">window</span>.a <span class="comment">// 1</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> b = <span class="number">1</span>;</span><br><span class="line"><span class="built_in">window</span>.b <span class="comment">// undefined</span></span><br></pre></td></tr></table></figure></p>
+
+        </div>
+        
+          <section class="meta" id="footer-meta">
+              <time class="time" itemprop="dateUpdated" datetime="2018-12-23T18:52:37+08:00" content="2018-12-23">
+                  <i class="fas fa-pen fa-fw" aria-hidden="true"></i>&nbsp;本文最后更新于：2018-12-23
+              </time>
+              
+                  
+                  <div class="tags"><a class="tag" href="/tags/let/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>&nbsp;let</a></div> <div class="tags"><a class="tag" href="/tags/const/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>&nbsp;const</a></div> <div class="tags"><a class="tag" href="/tags/ES6/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>&nbsp;ES6</a></div>
+              
+          </section>
+        
+
+        
+            <div class="prev-next">
+                
+                    <section class="prev">
+                        <span class="art-item-left">
+                            <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一篇</h6>
+                            <h4>
+                                <a href="/2018/12/23/hello-world/" rel="prev" title="Hello World">
+                                  
+                                      Hello World
+                                  
+                                </a>
+                            </h4>
+                            
+                        </span>
+                    </section>
+                
+                
+            </div>
+        
+
+    </section>
+
+</article>
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+<br>
+
+<!-- 显示推荐文章和评论 -->
+
+    <article class="post white-box comments">
+        <section class="article typo">
+
+            
+                
+
+    <div class="recommended_posts">
+        <h4><i class="fas fa-bookmark fa-fw" aria-hidden="true"></i>&nbsp;你可能感兴趣的文章</h4>
+        <ul>
+            
+                <li><a href="https://github.com/Gemini1996/2018/12/23/hello-world/">Hello World</a></li>
+            
+        </ul>
+    </div>
+
+
+            
+
+            
+
+                <h4><i class="fas fa-comments fa-fw" aria-hidden="true"></i>&nbsp;评论</h4>
+                
+
+                
+
+                
+                    
+                        <div class="subtitle">
+                          <h6><b>文明评论，请勿灌水。</b>为了便于区分和接收回复提醒，请您在留言时填写一下<b>昵称</b>和<b>邮箱</b>。</h6>
+                        <div>
+                        <section id="comments">
+                            <div id="valine_container" class="valine_thread">
+                                <i class="fas fa-spinner fa-spin fa-fw"></i>
+                            </div>
+                        </section>
+                        <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+                        <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+                    
+                
+            
+
+        </div></div></section>
+    </article>
+
+
+
+<script>
+    window.subData = {
+        title: 'let和const命令',
+        tools: true
+    }
+</script>
+
+
+        </div>
+        <aside class='l_side'>
+            
+    
+        
+  <section class="m_widget" id="author">
+    
+      <div class="header">
+        <img class="avatar" src="/LiSA.jpg">
+      </div>
+    
+    
+      <div class="content">
+        
+        
+          <p>我只希望我的头发不要少</p>
+        
+      </div>
+    
+    
+      <div class="social-wrapper">
+        
+          
+            <a href="mailto:me@870263950@qq.com" class="social flat-btn" target="_blank" rel="external"><i class="social fas fa-envelope" aria-hidden="true"></i></a>
+          
+        
+          
+            <a href="https://github.com/Gemini1996" class="social flat-btn" target="_blank" rel="external"><i class="social fab fa-github" aria-hidden="true"></i></a>
+          
+        
+          
+            <a href="https://music.163.com/#/user/home?id=108518179" class="social flat-btn" target="_blank" rel="external"><i class="social fas fa-music" aria-hidden="true"></i></a>
+          
+        
+      </div>
+    
+  </section>
+
+
+    
+    
+    
+        <section class="m_widget" id="categories">
+    <header class="header pure">
+        <div><i class="fas fa-folder-open fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;分类</div>
+    </header>
+    <div class="content pure">
+        
+            <ul class="entry">
+                
+                    <li><a class="flat-box" href="/categories/ES6/"><div class="name">ES6</div><div class="badge">(共1篇)</div></a></li>
+                
+            </ul>
+        
+    </div>
+</section>
+
+    
+    
+        
+    <section class="m_widget" id="tagcloud">
+        <header class="header pure">
+            <div><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;热门标签</div>
+        </header>
+        <div class="content pure">
+            <a href="/tags/ES6/" style="font-size: 14px; color: #999">ES6</a> <a href="/tags/const/" style="font-size: 14px; color: #999">const</a> <a href="/tags/let/" style="font-size: 14px; color: #999">let</a>
+        </div>
+    </section>
+
+
+    
+    
+        
+    <section class="m_widget toc-wrapper">
+        <header class="header pure">
+            <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;目录</div>
+            <div class="wrapper"><a class="s-toc rightBtn" title="固定到顶部" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div>
+        </header>
+        <div class="content pure">
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1、let命令"><span class="toc-text">1、let命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#基本用法"><span class="toc-text">基本用法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#不存在变量提升"><span class="toc-text">不存在变量提升</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#暂时性死区（temporal-dead-zone，简称TDZ）"><span class="toc-text">暂时性死区（temporal dead zone，简称TDZ）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#不能重复声明"><span class="toc-text">不能重复声明</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2、块级作用域"><span class="toc-text">2、块级作用域</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#块级作用域与函数声明"><span class="toc-text">块级作用域与函数声明</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3、const命令"><span class="toc-text">3、const命令</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#基本语法"><span class="toc-text">基本语法</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4、顶级对象的属性"><span class="toc-text">4、顶级对象的属性</span></a></li></ol>
+        </div>
+    </section>
+
+
+    
+    
+        
+
+
+
+    
+    
+
+
+        </aside>
+        <script>setLoadingBarProgress(60);</script>
+    </div>
+    </div>
+    <footer id="footer" class="clearfix">
+    <!-- 血小板 -->
+    <div id="landlord">
+        <div class="message" style="opacity:0"></div>
+        <canvas id="live2d" width="280" height="250" class="live2d"></canvas>
+        <div class="hide-button">隐藏</div>
+    </div>
+    
+        <div class="social-wrapper">
+          
+              
+                  <a href="mailto:me@870263950@qq.com" class="social fas fa-envelope flat-btn" target="_blank" rel="external"></a>
+              
+          
+              
+                  <a href="https://github.com/Gemini1996" class="social fab fa-github flat-btn" target="_blank" rel="external"></a>
+              
+          
+              
+                  <a href="https://music.163.com/#/user/home?id=108518179" class="social fas fa-music flat-btn" target="_blank" rel="external"></a>
+              
+          
+        </div>
+    
+    <br>
+    <div>博客内容遵循 <a target="_blank" href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" class="licenses">知识共享 署名 - 非商业性 - 相同方式共享 4.0 国际协议</a></div>
+    <div>本站使用 <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">Material X</a> 作为主题
+    </div>
+</footer>
+<!-- live2d 血小板 -->
+<script type="text/javascript" src="https://cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript">
+    var message_Path = '/live2d/'
+    var home_Path = 'https://haremu.com/'
+</script>
+<script type="text/javascript" src="/live2d/js/live2d.js"></script>
+<script type="text/javascript" src="/live2d/js/message.js"></script>
+<script type="text/javascript">
+    loadlive2d("live2d", "/live2d/model/xiaoban/model.json");
+</script>
+
+    <script>setLoadingBarProgress(80);</script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+<script src="//cdn.bootcss.com/node-waves/0.7.5/waves.min.js"></script>
+<script src="//cdn.bootcss.com/scrollReveal.js/3.3.2/scrollreveal.min.js"></script>
+<!-- 访问统计 -->
+<script async src="//cdn.jsdelivr.net/gh/xaoxuu/cdn@master/js/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+    <script>
+        var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+        var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+        var ALGOLIA_API_KEY = "";
+        var ALGOLIA_APP_ID = "";
+        var ALGOLIA_INDEX_NAME = "";
+        var AZURE_SERVICE_NAME = "";
+        var AZURE_INDEX_NAME = "";
+        var AZURE_QUERY_KEY = "";
+        var BAIDU_API_ID = "";
+        var SEARCH_SERVICE = "hexo" || "hexo";
+        var ROOT = "/"||"/";
+        if(!ROOT.endsWith('/'))ROOT += '/';
+    </script>
+
+
+
+
+  <script src="/js/search.js"></script>
+  <script src="/js/app.js"></script>
+
+
+
+
+    
+    
+    
+        
+            <script>
+            var GUEST_INFO = ['nick','mail','link'];
+            var guest_info = '昵称,邮箱,网址'.split(',').filter(function(item){
+                return GUEST_INFO.indexOf(item) > -1
+            });
+            var notify = 'false' == true;
+            var verify = 'false' == true;
+            var valine = new Valine();
+            valine.init({
+                el: '#valine_container',
+                notify: notify,
+                verify: verify,
+                guest_info: guest_info,
+                appId: "vg1ALAcP6fVaieN3qWltnlg7-gzGzoHsz",
+                appKey: "0cALSC4fUb4x8aF6kUQxe5uF",
+                placeholder: "欢迎评论",
+                pageSize:'10',
+                avatar:'mp',
+                lang:'zh-cn',
+                highlight:''
+            })
+            </script>
+        
+    
+
+
+
+
+
+    <script>setLoadingBarProgress(100);</script>
+</body>
+</html>
