@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>正则的扩展</title>
+      <link href="/2018/12/24/%E6%AD%A3%E5%88%99%E7%9A%84%E6%89%A9%E5%B1%95/"/>
+      <url>/2018/12/24/%E6%AD%A3%E5%88%99%E7%9A%84%E6%89%A9%E5%B1%95/</url>
+      
+        <content type="html"><![CDATA[<p>正则的扩展<br><a id="more"></a></p><h2 id="RegExp构造函数"><a href="#RegExp构造函数" class="headerlink" title="RegExp构造函数"></a>RegExp构造函数</h2><h3 id="ES5构造函数"><a href="#ES5构造函数" class="headerlink" title="ES5构造函数"></a>ES5构造函数</h3><p>第一种情况，第一个参数是字符串，第二个参数是正则表达式的修饰符<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> regex = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="string">'xyz'</span>, <span class="string">'i'</span>);</span><br><span class="line"><span class="comment">// 等价于</span></span><br><span class="line"><span class="keyword">var</span> regex = <span class="regexp">/xyz/i</span>;</span><br></pre></td></tr></table></figure></p><p>第二种情况，参数是一个正则表达式<br><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> regex = <span class="keyword">new</span> <span class="built_in">RegExp</span>(<span class="regexp">/xyz/i</span>);</span><br><span class="line"><span class="comment">// 等价于</span></span><br><span class="line"><span class="keyword">var</span> regex = <span class="regexp">/xyz/i</span>;</span><br></pre></td></tr></table></figure></p><h3 id="ES6构造函数"><a href="#ES6构造函数" class="headerlink" title="ES6构造函数"></a>ES6构造函数</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> ES6 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 正则 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>字符串的扩展</title>
       <link href="/2018/12/23/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%89%A9%E5%B1%95/"/>
       <url>/2018/12/23/%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E6%89%A9%E5%B1%95/</url>
