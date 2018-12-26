@@ -1,0 +1,77 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <%
+    var title = page.title;
+    if (is_archive()) {
+      title = 'Archives';
+      if (is_month())
+        title += ': ' + page.year + '/' + page.month;
+      else if (is_year())
+        title += ': ' + page.year;
+    }
+    else if (is_category())
+      title = 'Category: ' + page.category;
+    else if (is_tag())
+      title = 'Tag: ' + page.tag;
+  %>
+  <title><% if (title) { %><%= title %> | <% } %><%= config.title %></title>
+  <% if (page.keywords && config.keywords){ %>
+  <meta name="keywords" content="<%= page.keywords %>, <%= config.keywords %>">
+  <% } else if (page.keywords) { %>
+  <meta name="keywords" content="<%= page.keywords %>">
+  <% } else if (config.keywords) { %>
+  <meta name="keywords" content="<%= config.keywords %>">
+  <% } %>
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <%- favicon_tag(config.favicon) %>
+  <%- feed_tag(config.feed.path, {title: config.title}) %>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="shortcut icon" href="<%= config.shortcut_icon %>" />
+  <link rel="icon" href="<%= config.favicon %>" />
+  <link rel="stylesheet" href="/live2d/css/live2d.css" />
+
+  <link href='//cdn.bootcss.com/node-waves/0.7.5/waves.min.css' rel='stylesheet'>
+
+  <!-- style.css -->
+  <% if (config.import && config.import.style == true) { %>
+    <%- css('//cdn.jsdelivr.net/gh/xaoxuu/blog@gh-pages/style.css') %>
+  <% } else if (config.import && config.import.style && config.import.style.length > 0){ %>
+    <%- css(config.import.style) %>
+  <% } else { %>
+    <%- css('style.css') %>
+  <% } %>
+
+  <!-- fontawesome -->
+  <% if (config.import && config.import.fontawesome == true) { %>
+    <%- css('//cdn.jsdelivr.net/gh/xaoxuu/cdn@master/fontawesome/5.6.3/css/all.min.css') %>
+  <% } else if (config.import && config.import.fontawesome && config.import.fontawesome.length > 0){ %>
+    <%- css(config.import.fontawesome) %>
+  <% } else { %>
+    <%- css('fontawesome-free-5.6.3-web/css/all.min.css') %>
+  <% } %>
+
+  <!-- google_fonts -->
+  <% if (config.import && config.import.google_fonts && config.import.google_fonts.length > 0){ %>
+    <link href="<%= config.import.google_fonts %>" rel="stylesheet">
+  <% } %>
+
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script>
+  <% if (config.baidu_analytics_key) { %>
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?<%= config.baidu_analytics_key %>";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+  <% } %>
+</head>

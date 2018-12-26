@@ -1,0 +1,127 @@
+# Hexo Configuration
+## Docs: https://hexo.io/docs/configuration.html
+## Source: https://github.com/hexojs/hexo/
+# port
+server:
+  port: 8000
+  compress: true
+  header: true
+# Site
+title: Gemini1996的博客
+subtitle:
+description:
+keywords:
+author: Gemini1996
+language:
+timezone:
+shortcut_icon: "/favicon.ico"
+favicon: "/favicon.ico"
+avatar: "/LiSA.jpg"
+motto: 我只希望我的头发不要少
+
+social:
+- icon: fas fa-envelope
+  url: mailto:me@870263950@qq.com
+- icon: fab fa-github
+  url: https://github.com/Gemini1996
+- icon: fas fa-music
+  url: https://music.163.com/#/user/home?id=108518179
+
+# URL
+## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
+url: https://gemini1996.github.io
+root: /
+permalink: :year/:month/:day/:title/
+permalink_defaults:
+
+# Directory
+source_dir: source
+public_dir: public
+tag_dir: tags
+archive_dir: archives
+category_dir: categories
+code_dir: downloads/code
+i18n_dir: :lang
+skip_render:
+
+# Writing
+new_post_name: :title.md # File name of new posts
+default_layout: post
+titlecase: false # Transform title into titlecase
+external_link: true # Open external links in new tab
+filename_case: 0
+render_drafts: false
+post_asset_folder: false
+relative_link: false
+future: true
+highlight:
+  enable: true
+  line_number: true
+  auto_detect: false
+  tab_replace:
+
+# Home page setting
+# path: Root path for your blogs index page. (default = '')
+# per_page: Posts displayed per page. (0 = disable pagination)
+# order_by: Posts order. (Order by date descending by default)
+index_generator:
+  path: ''
+  per_page: 10
+  order_by: -date
+
+# Category & Tag
+default_category: uncategorized
+category_map:
+tag_map:
+
+# Date / Time format
+## Hexo uses Moment.js to parse and display date
+## You can customize the date format as defined in
+## http://momentjs.com/docs/#/displaying/format/
+date_format: YYYY-MM-DD
+time_format: HH:mm:ss
+
+# Pagination
+## Set per_page to 0 to disable pagination
+per_page: 10
+pagination_dir: page
+
+# Extensions
+## Plugins: https://hexo.io/plugins/
+## Themes: https://hexo.io/themes/
+theme: material-x
+
+# Deployment
+## Docs: https://hexo.io/docs/deployment.html
+deploy:
+  type: git
+  repo: git@github.com:Gemini1996/Gemini1996.github.io.git
+  branch: master
+
+# 导航栏，url必须以 "/" 结尾
+nav_menu:
+- name: 首页
+  icon: fas fa-home
+  url: /
+- name: 项目
+  icon: fas fa-rss
+  url: https://gitee.com/yinzhm/projects
+- name: 时间轴
+  icon: fas fa-archive
+  url: archives/
+- name: 关于我
+  icon: fas fa-user
+  url: about/
+
+# 评论
+valine:
+  enable: true # 如果想用Valine评论系统，请设置enable为true
+  app_id: vg1ALAcP6fVaieN3qWltnlg7-gzGzoHsz # 必填
+  app_key: 0cALSC4fUb4x8aF6kUQxe5uF  # 必填
+  guest_info: 昵称,邮箱,网址 #valine comment header info
+  placeholder: 欢迎评论 # valine comment input placeholder(like: Please leave your footprints )
+  avatar: mp # gravatar style https://valine.js.org/avatar
+  pageSize: 10 # comment list page size
+  verify: false # valine verify code (true/false)
+  notify: false # valine mail notify (true/false)
+  lang: zh-cn
