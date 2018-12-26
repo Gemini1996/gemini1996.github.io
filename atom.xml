@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://gemini1996.github.io/"/>
-  <updated>2018-12-24T01:15:43.946Z</updated>
+  <updated>2018-12-26T13:49:21.679Z</updated>
   <id>https://gemini1996.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>DOM</title>
+    <link href="https://gemini1996.github.io/2018/12/26/DOM/"/>
+    <id>https://gemini1996.github.io/2018/12/26/DOM/</id>
+    <published>2018-12-26T07:27:30.000Z</published>
+    <updated>2018-12-26T13:49:21.679Z</updated>
+    
+    <content type="html"><![CDATA[<p>DOM - 文档对象模型(Document Object Model)<br><a id="more"></a></p><h2 id="DOM简介"><a href="#DOM简介" class="headerlink" title="DOM简介"></a>DOM简介</h2><p>DOM是针对HTML和XML的一个API。<br>DOM描绘了一个层次化的节点数，允许开发人员添加、移除和修改页面的某一部分。</p><h2 id="DOM节点层次"><a href="#DOM节点层次" class="headerlink" title="DOM节点层次"></a>DOM节点层次</h2><p>DOM可以将任何HTML或XML文档描绘成一个由多层节点构成的结构。</p><h3 id="文档-Document"><a href="#文档-Document" class="headerlink" title="文档 (Document)"></a>文档 (Document)</h3><p>一个网页可以称为文档</p><h3 id="元素-Element"><a href="#元素-Element" class="headerlink" title="元素 (Element)"></a>元素 (Element)</h3><p>每个html标签就是一个元素。</p><h4 id="文档元素-根元素"><a href="#文档元素-根元素" class="headerlink" title="文档元素/根元素"></a>文档元素/根元素</h4><p>文档元素是文档的最外层元素。<br>在HTML页面中，文档元素始终都是&lt;html>元素</p><h3 id="节点-Node"><a href="#节点-Node" class="headerlink" title="节点 (Node)"></a>节点 (Node)</h3><p>在DOM中，网页中所有内容(标签、属性、文本、注释等)都是节点。</p><h2 id="DOM树"><a href="#DOM树" class="headerlink" title="DOM树"></a>DOM树</h2><p>由文档以及文档中的标签组成的树状结构图，称为DOM树</p><p><img src="http://www.w3school.com.cn/i/ct_htmltree.gif" alt="DOM树"></p><h2 id="DOM方法"><a href="#DOM方法" class="headerlink" title="DOM方法"></a>DOM方法</h2><h3 id="获取页面元素的方法"><a href="#获取页面元素的方法" class="headerlink" title="获取页面元素的方法"></a>获取页面元素的方法</h3><h4 id="根据id获取元素"><a href="#根据id获取元素" class="headerlink" title="根据id获取元素"></a>根据id获取元素</h4><p>getElementById()</p><h4 id="根据标签名获取元素的节点列表"><a href="#根据标签名获取元素的节点列表" class="headerlink" title="根据标签名获取元素的节点列表"></a>根据标签名获取元素的节点列表</h4><p>getElementsByTagName()</p><h4 id="根据类名获取元素的节点列表"><a href="#根据类名获取元素的节点列表" class="headerlink" title="根据类名获取元素的节点列表"></a>根据类名获取元素的节点列表</h4><p>getElementsByClassName()</p><h4 id="根据选择器获取元素的节点列表"><a href="#根据选择器获取元素的节点列表" class="headerlink" title="根据选择器获取元素的节点列表"></a>根据选择器获取元素的节点列表</h4><p>querySelector()<br>querySelectorAll()</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;DOM - 文档对象模型(Document Object Model)&lt;br&gt;
+    
+    </summary>
+    
+      <category term="JavaScript" scheme="https://gemini1996.github.io/categories/JavaScript/"/>
+    
+    
+      <category term="DOM" scheme="https://gemini1996.github.io/tags/DOM/"/>
+    
+  </entry>
   
   <entry>
     <title>正则的扩展</title>
