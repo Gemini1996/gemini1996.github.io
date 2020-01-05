@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   
-  <title>Excel操作 | Gemini&#39;s blog</title>
+  <title>Tag: 运营 | Gemini&#39;s blog</title>
   
   
   <meta name="description" content="个人博客">
@@ -53,7 +53,7 @@
   
   
   <div class="cover-wrapper">
-    <cover class='cover post half'>
+    <cover class='cover  half'>
       
         
   <h1 class='title'>Gemini's blog</h1>
@@ -234,11 +234,25 @@
 
   <div class="l_body">
     <div class='body-wrapper'>
-      <div class='l_main'>
+      
+<div class='l_main'>
   
-
-  <article id="post" class="post white-box article-type-post" itemscope itemprop="blogPost">
     
+      
+  <section class="post-list">
+    
+      
+        
+          
+        
+      
+    
+    
+      
+        
+          <div class='post-wrapper'>
+            <article class="post reveal ">
+  
 
 
   <section class='meta'>
@@ -247,13 +261,11 @@
     <div class="meta" id="header-meta">
       
         
-  
-    <h1 class="title">
-      <a href="/2019/05/18/excel%E6%93%8D%E4%BD%9C/">
-        Excel操作
-      </a>
-    </h1>
-  
+  <h2 class="title">
+    <a href="/2020/01/05/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E5%9B%BD%E9%99%85%E7%AB%99%E8%BF%90%E8%90%A5%E6%8A%80%E5%B7%A7/">
+      阿里巴巴国际站运营技巧
+    </a>
+  </h2>
 
 
       
@@ -281,7 +293,7 @@
             <div class="new-meta-item date">
   <a class='notlink'>
     <i class="fas fa-calendar-alt" aria-hidden="true"></i>
-    <p>2019-05-18</p>
+    <p>2020-01-05</p>
   </a>
 </div>
 
@@ -289,32 +301,6 @@
         
           
             
-  
-  <div class='new-meta-item category'>
-    <a href='/categories/Excel/' rel="nofollow">
-      <i class="fas fa-folder-open" aria-hidden="true"></i>
-      <p>Excel</p>
-    </a>
-  </div>
-
-
-          
-        
-          
-            
-  
-    <div class="new-meta-item browse busuanzi">
-      <a class='notlink'>
-        <i class="fas fa-eye" aria-hidden="true"></i>
-        <p>
-          <span id="busuanzi_value_page_pv">
-            <i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i>
-          </span>
-        </p>
-      </a>
-    </div>
-  
-
 
           
         
@@ -337,128 +323,44 @@
   </section>
 
 
-    <section class="article typo">
-      <div class="article-entry" itemprop="articleBody">
-        <a id="more"></a>
-<h2 id="一、批量创建工作表"><a href="#一、批量创建工作表" class="headerlink" title="一、批量创建工作表"></a><center>一、批量创建工作表</center></h2><p>1、选中需要创建的工作表名称区域(<code>要在最前面额外加一个单元格作为工作表名称</code>)，点击Excel表格菜单区域插入中的<code>数据透视表</code><br><img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=3349476080,3704771417&fm=173&app=49&f=JPEG?w=640&h=372&s=75CAFD130D2F600D486DE0DB020090B1" alt=""><br>2、在弹出“数据透视表”设置对话框，设置相应属性，下方选择放置数据透视图的位置，可以新建工作表，也可以在原有工作表创建，设置完成点击“确定”。<br><img src="https://ss2.baidu.com/6ONYsjip0QIZ8tyhnq/it/u=2754963938,3915280243&fm=173&app=49&f=JPEG?w=640&h=372&s=E148F113143D418818EDB5DB030050B3" alt=""><br>3、Excel表格右侧区域弹出设置面板，这时将数据透视图字段中的“工作表名称”拖拽至下方“筛选”框内<br><img src="https://ss1.baidu.com/6ONXsjip0QIZ8tyhnq/it/u=2207976115,3392558100&fm=173&app=49&f=JPEG?w=640&h=372&s=157864323D6E4409487514CB0200F0B0" alt=""><br>4、在数据图示表下拉菜单点击“选项”，点击“显示报表筛选页”即可，弹出“显示报表筛选页”对话框，鼠标单击选中“工作表名称”，点击“确定”完成。<br><img src="https://ss0.baidu.com/6ONWsjip0QIZ8tyhnq/it/u=2840956770,2170769826&fm=173&app=49&f=JPEG?w=640&h=371&s=195EED12056E450908C4D9DA020050B0" alt=""></p>
-<h2 id="二、批量创建excel文件"><a href="#二、批量创建excel文件" class="headerlink" title="二、批量创建excel文件"></a><center>二、批量创建excel文件</center></h2><p>1、右键任意一个工作表标签，在弹出的下拉列表中选择“查看代码”。即弹出代码窗口。<br>2、输入以下代码,点击运行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Sub SaveSeparately() </span><br><span class="line">Dim sht As Worksheet </span><br><span class="line">Application.ScreenUpdating &#x3D; False </span><br><span class="line">ipath &#x3D; ThisWorkbook.Path &amp; &quot;\&quot; </span><br><span class="line">For Each sht In Sheets </span><br><span class="line">sht.Copy </span><br><span class="line">ActiveWorkbook.SaveAs ipath &amp; sht.Name &amp; &quot;.xls&quot; </span><br><span class="line">ActiveWorkbook.Close </span><br><span class="line">Next </span><br><span class="line">Application.ScreenUpdating &#x3D; True </span><br><span class="line">End Sub</span><br></pre></td></tr></table></figure>
-
-
-      </div>
-      
-        <br>
-        <center>------------End------------</center>
+  <section class="article typo">
+    <div class="article-entry" itemprop="articleBody">
       
       
-        <br>
-        
-
-
-  <section class='meta' id="footer-meta">
-    <div class='new-meta-box'>
-      
-        
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2020-01-04T11:57:22+08:00">
-  <a class='notlink'>
-    <i class="fas fa-clock" aria-hidden="true"></i>
-    <p>updated at Jan 4, 2020</p>
-  </a>
-</div>
-
-        
-      
-        
-          
-
-        
-      
-        
-          
-
-        
+        <div class="readmore">
+          <a href="/2020/01/05/%E9%98%BF%E9%87%8C%E5%B7%B4%E5%B7%B4%E5%9B%BD%E9%99%85%E7%AB%99%E8%BF%90%E8%90%A5%E6%8A%80%E5%B7%A7/" class="flat-box">
+            <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+            Read More
+          </a>
+        </div>
       
     </div>
+    
+      <div class="full-width auto-padding tags">
+        
+          <a href="/tags/%E8%BF%90%E8%90%A5/" rel="nofollow"><i class="fas fa-tag fa-fw"></i> 运营</a>
+        
+      </div>
+    
   </section>
+</article>
 
-
-      
-      
-          <div class="prev-next">
-              
-                  <section class="prev">
-                      <span class="art-item-left">
-                          <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;Previous</h6>
-                          <h4>
-                              <a href="/2020/01/01/2019%E4%B8%AA%E4%BA%BA%E5%90%AC%E6%AD%8C%E6%80%BB%E7%BB%93/" rel="prev" title="2019个人听歌总结">
-                                
-                                    2019个人听歌总结
-                                
-                              </a>
-                          </h4>
-                          
-                      </span>
-                  </section>
-              
-              
-                  <section class="next">
-                      <span class="art-item-right" aria-hidden="true">
-                          <h6>Next&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
-                          <h4>
-                              <a href="/2019/02/06/%E4%B8%AA%E4%BA%BA%E9%9A%8F%E7%AC%941/" rel="prev" title="2019随便说说1">
-                                  
-                                      2019随便说说1
-                                  
-                              </a>
-                          </h4>
-                          
-                      </span>
-                  </section>
-              
           </div>
+        
       
-    </section>
-  </article>
+    
+  </section>
+  
+    
+    <!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
+    
+    
+
+  
 
 
-
-  <!-- 显示推荐文章和评论 -->
-
-
-
-  <article class="post white-box comments">
-    <section class="article typo">
-      <h4><i class="fas fa-comments fa-fw" aria-hidden="true"></i>&nbsp;Comments</h4>
-      
-      
-      
-      
-        <section id="comments">
-          <div id="valine_container" class="valine_thread">
-            <i class="fas fa-spinner fa-spin fa-fw"></i>
-          </div>
-        </section>
-      
-    </section>
-  </article>
-
-
-
-
-
-
-<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
-
-
-
-  <script>
-    window.subData = {
-      title: 'Excel操作',
-      tools: true
-    }
-  </script>
-
-
+    
+  
 </div>
 <aside class='l_side'>
   
@@ -624,42 +526,92 @@
         
           
           
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
+        
+          
+          
             
-              
-  <section class='widget toc-wrapper'>
-    
-<header class='pure'>
-  <div><i class="fas fa-list fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;TOC</div>
+              <section class='widget list'>
   
-    <!-- <div class='wrapper'><a class="s-toc rightBtn" rel="external nofollow noopener noreferrer" href="javascript:void(0)"><i class="fas fa-thumbtack fa-fw"></i></a></div> -->
+<header class='pure'>
+  <div><i class="fas fa-thumbs-up fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;强烈推荐</div>
   
 </header>
 
-    <div class='content pure'>
-      <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一、批量创建工作表"><span class="toc-text">一、批量创建工作表</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二、批量创建excel文件"><span class="toc-text">二、批量创建excel文件</span></a></li></ol>
-    </div>
-  </section>
-
+  <div class='content pure'>
+    <ul class="entry">
+      
+        <li><a class="flat-box" title="https://musictool.top" href="https://musictool.top"
+          
+          
+          >
+          <div class='name'>
+            
+              <i class=" fa-fw" aria-hidden="true"></i>
+            
+            &nbsp;&nbsp;音乐下载
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="https://yasuotu.com" href="https://yasuotu.com"
+          
+          
+          >
+          <div class='name'>
+            
+              <i class=" fa-fw" aria-hidden="true"></i>
+            
+            &nbsp;&nbsp;图片在线压缩
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="https://realfavicongenerator.net" href="https://realfavicongenerator.net"
+          
+          
+          >
+          <div class='name'>
+            
+              <i class=" fa-fw" aria-hidden="true"></i>
+            
+            &nbsp;&nbsp;生成Favicon
+          </div>
+          
+        </a></li>
+      
+        <li><a class="flat-box" title="https://mxclub.github.io/resume/" href="https://mxclub.github.io/resume/"
+          
+          
+          >
+          <div class='name'>
+            
+              <i class=" fa-fw" aria-hidden="true"></i>
+            
+            &nbsp;&nbsp;简历主题
+          </div>
+          
+        </a></li>
+      
+    </ul>
+  </div>
+</section>
 
             
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
           
         
       
@@ -885,103 +837,50 @@
         
           
           
-        
-          
-          
             
-              <section class='widget list'>
-  
+              
+
+
+  <section class='widget music'>
+    
 <header class='pure'>
-  <div><i class="fas fa-thumbs-up fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;强烈推荐</div>
+  <div><i class="fas fa-compact-disc fa-fw" aria-hidden="true"></i>&nbsp;&nbsp;最近在听</div>
+  
+    <a class="rightBtn"
+    
+      rel="external nofollow noopener noreferrer"
+    
+    
+      target="_blank"
+    
+    href="https://music.163.com/#/user/home?id=108518179"
+    title="https://music.163.com/#/user/home?id=108518179">
+    <i class="far fa-heart fa-fw"></i></a>
   
 </header>
 
-  <div class='content pure'>
-    <ul class="entry">
+    <div class='content pure'>
       
-        <li><a class="flat-box" title="https://musictool.top" href="https://musictool.top"
-          
-          
-          >
-          <div class='name'>
-            
-              <i class=" fa-fw" aria-hidden="true"></i>
-            
-            &nbsp;&nbsp;音乐下载
-          </div>
-          
-        </a></li>
-      
-        <li><a class="flat-box" title="https://yasuotu.com" href="https://yasuotu.com"
-          
-          
-          >
-          <div class='name'>
-            
-              <i class=" fa-fw" aria-hidden="true"></i>
-            
-            &nbsp;&nbsp;图片在线压缩
-          </div>
-          
-        </a></li>
-      
-        <li><a class="flat-box" title="https://realfavicongenerator.net" href="https://realfavicongenerator.net"
-          
-          
-          >
-          <div class='name'>
-            
-              <i class=" fa-fw" aria-hidden="true"></i>
-            
-            &nbsp;&nbsp;生成Favicon
-          </div>
-          
-        </a></li>
-      
-        <li><a class="flat-box" title="https://mxclub.github.io/resume/" href="https://mxclub.github.io/resume/"
-          
-          
-          >
-          <div class='name'>
-            
-              <i class=" fa-fw" aria-hidden="true"></i>
-            
-            &nbsp;&nbsp;简历主题
-          </div>
-          
-        </a></li>
-      
-    </ul>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.css">
+  <div class="aplayer"
+    data-theme="#8A2BE2"
+    
+    
+    data-mode="circulation"
+    data-server="netease"
+    data-type="playlist"
+    data-id="132374307"
+    data-volume="0.5">
   </div>
-</section>
+  <script src="https://cdn.jsdelivr.net/npm/aplayer@1.7.0/dist/APlayer.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/meting@1.1.0/dist/Meting.min.js"></script>
+
+
+    </div>
+  </section>
+
 
             
-          
-        
-      
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
-          
-        
-          
           
         
           
@@ -1112,38 +1011,6 @@
 
 
 
-
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  
-    
-      
-<script src="/js/volantis.js"></script>
-
-    
-  
-  <script>
-  var GUEST_INFO = ['nick','mail','link'];
-  var guest_info = 'nick,mail,link'.split(',').filter(function(item){
-    return GUEST_INFO.indexOf(item) > -1
-  });
-  var notify = 'true' == true;
-  var verify = 'true' == true;
-  var valine = new Valine();
-  valine.init({
-    el: '#valine_container',
-    notify: notify,
-    verify: verify,
-    guest_info: guest_info,
-    
-    appId: "vg1ALAcP6fVaieN3qWltnlg7-gzGzoHsz",
-    appKey: "0cALSC4fUb4x8aF6kUQxe5uF",
-    placeholder: "快来评论吧~",
-    pageSize:'10',
-    avatar:'mp',
-    lang:'zh-cn',
-    highlight:'true'
-  })
-  </script>
 
 
 
