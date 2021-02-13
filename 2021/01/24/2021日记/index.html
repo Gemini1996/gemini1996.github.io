@@ -1,0 +1,167 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"><title>2021日记 | Gemini1996</title><meta name="description" content="2021日记"><meta name="author" content="Andy Yin"><meta name="copyright" content="Andy Yin"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Gemini1996/assets@master/imgs/blog/favicon.ico"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin><link rel="preconnect" href="//busuanzi.ibruce.info"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="2021日记"><meta name="twitter:description" content="2021日记"><meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/Gemini1996/assets@master/imgs/cover/cover-13.jpg"><meta property="og:type" content="article"><meta property="og:title" content="2021日记"><meta property="og:url" content="http://yinzhm.gitee.io/2021/01/24/2021%E6%97%A5%E8%AE%B0/"><meta property="og:site_name" content="Gemini1996"><meta property="og:description" content="2021日记"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/Gemini1996/assets@master/imgs/cover/cover-13.jpg"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = 'true'
+var t = Cookies.get("theme");
+if (autoChangeMode == '1'){
+const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+if (t === undefined){
+  if (isLightMode) activateLightMode()
+  else if (isDarkMode) activateDarkMode()
+  else if (isNotSpecified || hasNoSupport){
+    console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+    now = new Date();
+    hour = now.getHours();
+    isNight = hour < 6 || hour >= 18
+    isNight ? activateDarkMode() : activateLightMode()
+}
+} else if (t == 'light') activateLightMode()
+else activateDarkMode()
+
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="canonical" href="http://yinzhm.gitee.io/2021/01/24/2021%E6%97%A5%E8%AE%B0/"><link rel="next" title="2020年度总结" href="http://yinzhm.gitee.io/2021/01/17/2020%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  translate: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    title: 'Snackbar.bookmark.title',
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: {"languages":{"author":"作者: Andy Yin","link":"链接: http://yinzhm.gitee.io/2021/01/24/2021%E6%97%A5%E8%AE%B0/","source":"来源: Gemini1996","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  baiduPush: false,
+  isHome: false,
+  isPost: true
+  
+}</script><meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="Gemini1996" type="application/atom+xml">
+</head><body><header> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">Gemini1996</a></span><span class="toggle-menu pull_right close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 个人主页</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa-fw fa fa-sitemap" aria-hidden="true"></i><span> 文章整合</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 文章归档</span></a></li><li><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 所有标签</span></a></li><li><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类查看</span></a></li></ul></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> 娱乐放松</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/categories/%E7%9B%B8%E5%86%8C"><i class="fa-fw fa-fw fa fa-image"></i><span> 所有相册</span></a></li><li><a class="site-page" href="/categories/%E9%9F%B3%E4%B9%90"><i class="fa-fw fa fa-music"></i><span> 音乐分享</span></a></li><li><a class="site-page" href="/project/"><i class="fa-fw fa fa-heart"></i><span> 项目查看</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-info"></i><span> 关于博主</span></a></div></div></span><span class="pull_right" id="search_button"><a class="site-page social-icon search"><i class="fa fa-search fa-fw"></i><span> 搜索文章</span></a></span></div></header><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="https://cdn.jsdelivr.net/gh/Gemini1996/assets@master/imgs/blog/avatar.jpg" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/Gemini1996/assets@master/imgs/blog/friend_404.gif'" alt="avatar"></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">18</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">7</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">9</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 个人主页</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa-fw fa fa-sitemap" aria-hidden="true"></i><span> 文章整合</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 文章归档</span></a></li><li><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 所有标签</span></a></li><li><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类查看</span></a></li></ul></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> 娱乐放松</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/categories/%E7%9B%B8%E5%86%8C"><i class="fa-fw fa-fw fa fa-image"></i><span> 所有相册</span></a></li><li><a class="site-page" href="/categories/%E9%9F%B3%E4%B9%90"><i class="fa-fw fa fa-music"></i><span> 音乐分享</span></a></li><li><a class="site-page" href="/project/"><i class="fa-fw fa fa-heart"></i><span> 项目查看</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-info"></i><span> 关于博主</span></a></div></div></div><div id="mobile-sidebar-toc"><div class="toc_mobile_headline">目录</div><div class="sidebar-toc__content"><ol class="toc_mobile_items"><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#一月"><span class="toc_mobile_items-number">1.</span> <span class="toc_mobile_items-text">一月</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#1月21日"><span class="toc_mobile_items-number">1.1.</span> <span class="toc_mobile_items-text">1月21日</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#1月22日"><span class="toc_mobile_items-number">1.2.</span> <span class="toc_mobile_items-text">1月22日</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#1月23日"><span class="toc_mobile_items-number">1.3.</span> <span class="toc_mobile_items-text">1月23日</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#1月24日"><span class="toc_mobile_items-number">1.4.</span> <span class="toc_mobile_items-text">1月24日</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#1月25日"><span class="toc_mobile_items-number">1.5.</span> <span class="toc_mobile_items-text">1月25日</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#1月26日"><span class="toc_mobile_items-number">1.6.</span> <span class="toc_mobile_items-text">1月26日</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#1月27日"><span class="toc_mobile_items-number">1.7.</span> <span class="toc_mobile_items-text">1月27日</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#1月28日"><span class="toc_mobile_items-number">1.8.</span> <span class="toc_mobile_items-text">1月28日</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#1月29日"><span class="toc_mobile_items-number">1.9.</span> <span class="toc_mobile_items-text">1月29日</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#1月30日"><span class="toc_mobile_items-number">1.10.</span> <span class="toc_mobile_items-text">1月30日</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#1月31日"><span class="toc_mobile_items-number">1.11.</span> <span class="toc_mobile_items-text">1月31日</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#二月"><span class="toc_mobile_items-number">2.</span> <span class="toc_mobile_items-text">二月</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#2月1日"><span class="toc_mobile_items-number">2.1.</span> <span class="toc_mobile_items-text">2月1日</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#2月2日"><span class="toc_mobile_items-number">2.2.</span> <span class="toc_mobile_items-text">2月2日</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#2月3日"><span class="toc_mobile_items-number">2.3.</span> <span class="toc_mobile_items-text">2月3日</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#2月4日"><span class="toc_mobile_items-number">2.4.</span> <span class="toc_mobile_items-text">2月4日</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#2月5日"><span class="toc_mobile_items-number">2.5.</span> <span class="toc_mobile_items-text">2月5日</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#2月6日"><span class="toc_mobile_items-number">2.6.</span> <span class="toc_mobile_items-text">2月6日</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#2月7日"><span class="toc_mobile_items-number">2.7.</span> <span class="toc_mobile_items-text">2月7日</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#2月8日"><span class="toc_mobile_items-number">2.8.</span> <span class="toc_mobile_items-text">2月8日</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#2月9日"><span class="toc_mobile_items-number">2.9.</span> <span class="toc_mobile_items-text">2月9日</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#2月10日"><span class="toc_mobile_items-number">2.10.</span> <span class="toc_mobile_items-text">2月10日</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#2月11日"><span class="toc_mobile_items-number">2.11.</span> <span class="toc_mobile_items-text">2月11日</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#2月12日"><span class="toc_mobile_items-number">2.12.</span> <span class="toc_mobile_items-text">2月12日</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#2月13日"><span class="toc_mobile_items-number">2.13.</span> <span class="toc_mobile_items-text">2月13日</span></a></li></ol></li></ol></div></div></div><div id="body-wrap"><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true">     </i><div class="auto_open" id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#一月"><span class="toc-number">1.</span> <span class="toc-text">一月</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1月21日"><span class="toc-number">1.1.</span> <span class="toc-text">1月21日</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1月22日"><span class="toc-number">1.2.</span> <span class="toc-text">1月22日</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1月23日"><span class="toc-number">1.3.</span> <span class="toc-text">1月23日</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1月24日"><span class="toc-number">1.4.</span> <span class="toc-text">1月24日</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1月25日"><span class="toc-number">1.5.</span> <span class="toc-text">1月25日</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1月26日"><span class="toc-number">1.6.</span> <span class="toc-text">1月26日</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1月27日"><span class="toc-number">1.7.</span> <span class="toc-text">1月27日</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1月28日"><span class="toc-number">1.8.</span> <span class="toc-text">1月28日</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1月29日"><span class="toc-number">1.9.</span> <span class="toc-text">1月29日</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1月30日"><span class="toc-number">1.10.</span> <span class="toc-text">1月30日</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1月31日"><span class="toc-number">1.11.</span> <span class="toc-text">1月31日</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#二月"><span class="toc-number">2.</span> <span class="toc-text">二月</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2月1日"><span class="toc-number">2.1.</span> <span class="toc-text">2月1日</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2月2日"><span class="toc-number">2.2.</span> <span class="toc-text">2月2日</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2月3日"><span class="toc-number">2.3.</span> <span class="toc-text">2月3日</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2月4日"><span class="toc-number">2.4.</span> <span class="toc-text">2月4日</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2月5日"><span class="toc-number">2.5.</span> <span class="toc-text">2月5日</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2月6日"><span class="toc-number">2.6.</span> <span class="toc-text">2月6日</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2月7日"><span class="toc-number">2.7.</span> <span class="toc-text">2月7日</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2月8日"><span class="toc-number">2.8.</span> <span class="toc-text">2月8日</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2月9日"><span class="toc-number">2.9.</span> <span class="toc-text">2月9日</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2月10日"><span class="toc-number">2.10.</span> <span class="toc-text">2月10日</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2月11日"><span class="toc-number">2.11.</span> <span class="toc-text">2月11日</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2月12日"><span class="toc-number">2.12.</span> <span class="toc-text">2月12日</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2月13日"><span class="toc-number">2.13.</span> <span class="toc-text">2月13日</span></a></li></ol></li></ol></div></div></div><main id="content-outer"><div id="top-container" style="background-image: url(https://cdn.jsdelivr.net/gh/Gemini1996/assets@master/imgs/cover/cover-13.jpg)"><div id="post-info"><div id="post-title"><div class="posttitle">2021日记</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 发表于 2021-01-24<span class="post-meta__separator">|</span><i class="fa fa-history fa-fw" aria-hidden="true"></i> 更新于 2021-02-13</time><div class="post-meta-wordcount"><div class="post-meta-pv-cv"><span><i class="fa fa-eye post-meta__icon fa-fw" aria-hidden="true"> </i>阅读量:</span><span id="busuanzi_value_page_pv"></span></div></div></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><h2 id="一月"><a href="#一月" class="headerlink" title="一月"></a>一月</h2><h3 id="1月21日"><a href="#1月21日" class="headerlink" title="1月21日"></a>1月21日</h3><ul>
+<li>地铁1号线每次下雨天都会晚点，要不是我对时间控制的很好怕是要迟到了。</li>
+<li>在地铁里听到面包店店员说买三送一，以前的我可能会想那一共是多少钱，但现在的我想的是买的三是有指定的面包吗以及送的一是什么，也许这就是成长吧。</li>
+<li>昨天吃了红烧肉，可能是吃多了还是咋的，现在一回想起红烧肉就有反胃的感觉。</li>
+<li>在地铁里思考人一旦犯错了就会有第二次，第三次，好了伤疤忘了疼，然后出地铁后就意识到自己又把带的饭盒忘在了美团单车上了，还好我妈去地铁站找到了饭盒，发现我的饭盒被人放在了地上没被人拿走。<h3 id="1月22日"><a href="#1月22日" class="headerlink" title="1月22日"></a>1月22日</h3></li>
+<li>前两天吃瓜郑爽跟前夫在美国找代孕然后想堕胎或把孩子送人的事，这个世界生命真的是不值钱啊。</li>
+<li>一个虚拟主播因为贫穷和疾病而离开了世界，事情曝光后竟然有人在nga发帖怀疑是骗钱的行为；还有人在抖音上以他的名义注册账号来骗钱，真的是令人作呕。</li>
+<li>昨天想着要是股票跌了就买基金建仓了，结果基金大涨，不过犹豫再三最终还是决定今天投个1000试试水。</li>
+<li>上海突然爆出了新冠疫情，一天爆出了3个，这个年怕是又不太好过了。<h3 id="1月23日"><a href="#1月23日" class="headerlink" title="1月23日"></a>1月23日</h3></li>
+<li>终于到周末了，感觉忙碌了一周脖子还有腰更酸了，这就是打工人的现实吗。</li>
+<li>看着每天上海公布新增本地新冠确诊病例就想到去年同期的场景，这疫情什么时候才能到头啊。<h3 id="1月24日"><a href="#1月24日" class="headerlink" title="1月24日"></a>1月24日</h3></li>
+<li>还有两周才能过新年，周末在家不知道该干嘛，只能看看剧追追番打发时间，一想到明天周一不想上班的情绪又上头了。</li>
+<li>昨天因为下雨所以没去健身房，今天一早去发现里面的人还是跟平时一样在锻炼，丝毫没有因为疫情而不来健身房了。<h3 id="1月25日"><a href="#1月25日" class="headerlink" title="1月25日"></a>1月25日</h3></li>
+<li>还有9天才能放假，今天到了公司一点上班的欲望都没有。</li>
+<li>一整天坐在那给新网站上传产品，修改标题、产品属性、keywords、SEO描述，真的是弄得我眼睛都花了。</li>
+<li>听说周六的年会还照常进行，上海每天都有新增本地新冠确诊病例，咋还头铁继续开年会呢，服了。不过这也算是我第一次体验年会，小小期待下吧，要是不用上台表演就更好了。<h3 id="1月26日"><a href="#1月26日" class="headerlink" title="1月26日"></a>1月26日</h3></li>
+<li>今天湿冷+阴雨的天气真的是糟糕透顶，是我最讨厌的天气。一整天感觉都不舒服，一点精神都没有。</li>
+<li>今天听同事讨论地铁早高峰才意识到前几天地铁15号线开通试运营了。听说离我家附近的吴中路站对面就是地铁公司，所以吴中路站改造的很豪华，哪天可以去体验看一下。</li>
+<li>全球新冠确诊病例超过1亿了，2亿还会远吗？</li>
+<li>基金刚买1天，股票就大跌，好家伙我真就成韭菜了吗？<h3 id="1月27日"><a href="#1月27日" class="headerlink" title="1月27日"></a>1月27日</h3></li>
+<li>今天骑车去上班的路上看到了辆自行车后座印有爱探险的朵拉的图案，回想起了小时候爷爷载我的那段时光。</li>
+<li>例行周三下午开培训会，从2点半硬生生开到5点半，我作为一个运营真的需要懂产品知识吗？以后还有什么10分钟不限主题的演讲，真的是麻烦死了。做B2B运营真的是好没意思啊，相比做B2C会有实打实的订单，做B2B只能提升公司的询盘量来帮业务获取客户，真的是越做越感觉没劲了。现在想想还是做女装、消费品这样的B2C电商运营更有成就感啊！<h3 id="1月28日"><a href="#1月28日" class="headerlink" title="1月28日"></a>1月28日</h3></li>
+<li>每天运营阿里国际站+自建站+谷歌Adwords+百度搜索推广四大平台已经够累了，今天下午接到中国制造的客户经理一顿电话轰炸真的是快要心态爆炸破防了，我哪有那么多时间给你搞这有的没的，我又没有三头六臂。</li>
+<li>一个公司电商部实际上就我一人，这本就是很不合理的事。说好给我招部门人员招到现在，一个骑电动车骨折修养了一个多月了，另一个回老家照顾老人去了，到头来这几天又是只有我一人在运营，真的是无语。</li>
+<li>同事之间如果没有利益关系还是能很好地相处的，而一旦有了利益或者竞争关系，那相处起来可就太累了。<h3 id="1月29日"><a href="#1月29日" class="headerlink" title="1月29日"></a>1月29日</h3></li>
+<li>一周终于结束了，感觉这周特别的难熬。跟大学同学严云去了传奇大锅台吃了顿，感觉还可以，而且还很便宜才100出头。</li>
+<li>听到我大学同学去培训机构做老师一对一每节课2小时能拿280多，我瞬间就心动了。要是真能每周六日上课，周一到周五休息，一周也能拿个8000，那多爽啊。<h3 id="1月30日"><a href="#1月30日" class="headerlink" title="1月30日"></a>1月30日</h3></li>
+<li>今天好像没发生什么，已经开始盼着下周上完班放假了。</li>
+<li>今天打了半天还是没能打过《明日方舟》的危机合约30，最后勉强打过了28。</li>
+<li>感觉是时候该更新下自己的简历了，看看自己在市场目前的价值是多少。<h3 id="1月31日"><a href="#1月31日" class="headerlink" title="1月31日"></a>1月31日</h3></li>
+<li>进击的巨人快完结了，是时候开始从第二季开始补番了。</li>
+<li>瞄了一眼谷歌账号谷歌推广终于上线了，都快一个月了。<h2 id="二月"><a href="#二月" class="headerlink" title="二月"></a>二月</h2><h3 id="2月1日"><a href="#2月1日" class="headerlink" title="2月1日"></a>2月1日</h3></li>
+<li>我的19岁助理由于从上海回家，所以被强制在家隔离回不来了，这最后一周又是只有我一个电商人员在公司上班了。</li>
+<li>今天下午4点半被拉去跟国内业务人员开会，硬生生开会开到6点半；上午付总又给我发了电商营销专员岗位职责，好家伙五个职责每个都可以专门招个人做了好吗！这是要我一个人做五份工作？做啥美梦呢！打工人也不是这么压榨的吧！<h3 id="2月2日"><a href="#2月2日" class="headerlink" title="2月2日"></a>2月2日</h3></li>
+<li>本来之前听同事说2月6日公司就放假了，所以就想这一周忍忍就过去了。没想到今天老板娘说她没说过这样的话，公司员工要上班到2月10日。这感觉就好像你买了彩票以为中奖了，去兑换的时候跟你说并没有中奖，还要你出购买的2元钱。</li>
+<li>临近过年，一点上班的心思都没有了，每天都只想着尽快回家。昨晚还把自己的简历挂在了Boss直聘上，今天一天都有好几条消息，不过貌似没有找到心仪的岗位。<h3 id="2月3日"><a href="#2月3日" class="headerlink" title="2月3日"></a>2月3日</h3></li>
+<li>今天周三例行分享会结束后，当业务员得知一年的提成这次可能要交25%的税之后瞬间不开心了，不过对于我来说反正我也没提成，所以我也就当个吃瓜群众，顺便煽风点火。</li>
+<li>又是一个难熬的一天，算了算本月差不多一天班有350元，这样想想好像还是硬着头皮上完这6天算了，毕竟4天就要1400元了啊。<h3 id="2月4日"><a href="#2月4日" class="headerlink" title="2月4日"></a>2月4日</h3></li>
+<li>今天到了公司一点上班的欲望都没有，只想着放假，一整天基本就是学习下SEM、SEO，然后跟同事在微信群里聊聊天度过的。我看周围同事也都是一副没啥事情做，等下班的状态。</li>
+<li>想起以前的读书时期，每逢第一次月考和期中考试我都能考的不错，但到了第二次月考以及期末考试，学习状态和成绩就会大幅度下滑。也许我就是那种能一门心思花在一件事情上维持1到2个月，但一旦到了疲劳期，就再也不能恢复到之前的状态了。而现在工作的情况也类似，前2个月我还能每天充满斗志地去公司上班，而一旦到了第三个月，我就或多或少开始有疲惫感了，这时候工作上稍微有点不如意就会有离职的冲动了，虽然我也知道这样并不好，但是我也没办法控制住自己的情绪。也许这就是为什么国家会规定工作满一年有5天带薪年假吧。然而这家公司并没有年假，甚至产假、婚假都没有，还扣了我半个月工资，真的是黑心企业。<h3 id="2月5日"><a href="#2月5日" class="headerlink" title="2月5日"></a>2月5日</h3></li>
+<li>今日下班去长风公园尝试了星怡会，一家新加坡美食餐厅。味道还可以，马来拉茶很好喝，椰汁蒸三色芒果甜饭也很不错，只不过可能在公司饿过头了，7点多已经没有胃口了。</li>
+<li>没想到长风公园旁边的大悦城都没什么人，不知道是因为今天是周五，或者因为下雨天，还是说快过年了打工人都回去了，感觉大悦城好冷清啊。</li>
+<li>从长风公园大悦城回家只需要坐15号线4站就到了，有地铁站在家附近就是方便啊，15号线吴中路站里面修的也确实挺漂亮的，出站回家的时候看到居然有妹子专门跑过来带着摄影师来打卡拍照的，也真是惊到我了。</li>
+<li>今日付总在周五例会后又开始给我洗脑了，表示今年年终奖就多发一个月工资作为奖励，唉多一个月工资就多一个月工资吧，总比没有来得强。2021年做完再看看年终能拿到多少奖金，要是拿的太少就想办法去其他公司发展吧。</li>
+<li>虽然最近有换工作的打算，Boss直聘上也挂上简历了，但找工作确实不容易，要么离家太远，要么工作内容不满意。现在只能走一步看一步吧。<h3 id="2月6日"><a href="#2月6日" class="headerlink" title="2月6日"></a>2月6日</h3></li>
+<li>今天好像有点感冒了，去健身房锻炼感觉都没啥力气。健身房还有理发店下周就停止营业了，然而我明天却还要去上班，太惨了吧。</li>
+<li>今天看了沃玛的长沙+海南旅游vlog，又开始纠结要不要换一个拍照手机或者买一个相机了。之前一直纠结是否有必要买个相机，毕竟每天生活都是公司和家的两点一线，并没有买相机的必要，加上去年一整年疫情导致都不能出去旅游（虽然也去了南京一趟）。不过我感觉还是有必要记录下生活的，方便以后翻出来看看自己都去过哪些地方，再加上工作了一年了也该奖励下自己了。要是小米mix4今年出的话就买个小米mix4好了。<h3 id="2月7日"><a href="#2月7日" class="headerlink" title="2月7日"></a>2月7日</h3></li>
+<li>今天上班路上明显感觉到人少了好多，地铁里空座位也多了。看来大部分公司的人都放假了啊，只有我们这样的真正的打工人还会在周日还要继续上班。</li>
+<li>上班一整天感觉同事们也都没啥心思，玩手机的玩手机，聊天的聊天，18点下班时间一到，基本一半的人都走了。</li>
+<li>今天发了2个月的工资（多的一个月工资作为年终奖），个人所有的积蓄加起来差不多也快要9万了，虽然距离目标买车还差不少，但至少也算是有点资金了。</li>
+<li>今天一天好像就光在那边学习谷歌SEO了，看了很多关于谷歌SEO优化的内容，感觉还是有不少收获的。就是看完感觉自己之前做的网站好像很多地方有不足，但现在有几个页面已经被谷歌收录了，也不知道修改后会不会导致不被收录啊。<h3 id="2月8日"><a href="#2月8日" class="headerlink" title="2月8日"></a>2月8日</h3></li>
+<li>今天一早付总就跟我们说10号就不用上班了，芜湖那就意味着明天上完就放假了。</li>
+<li>同事有的已经坐火车在回家的路上了，所以今天来上班的同事少了好几个。今天的状态也跟昨天差不多，心思完全没放在工作上，还是主要以看谷歌教程为主。</li>
+<li>不得不说我对谷歌SEO+SEM还是很感兴趣的，放假在家可以好好研究下谷歌推广技术（说是这么说，估计放假了就完全忘记这件事了）。<h3 id="2月9日"><a href="#2月9日" class="headerlink" title="2月9日"></a>2月9日</h3></li>
+<li>今天是2020年的最后一个工作日，一大早7点就醒了。意识到今天是本周的最后一个工作日的这种感觉就仿佛是在上学时期的最后一门考试前一样。</li>
+<li>这几天看谷歌搜索推广的教程和书，我的观后感就是做任何事都要了解它的本质，而不是拿到手就直接开干。思考永远是最重要的。</li>
+<li>关于搜索引擎，一定要知道用户搜一个关键词他想要得到的是什么答案，然后再根据这个关键词去设置广告来迎合他的需求，让他知道我能满足他的expectation。</li>
+<li>刚刚看Boss直聘，然后发现里面有个专栏是专门讨论运营相关问题的，感觉能学到一些内容。</li>
+<li>今日是不多见的5点就下班了，不过多出来的一小时感觉我并没有好好利用，就这么浪费掉了。人的一生光浪费掉的时间就能占很大一部分了吧，如果能好好珍惜每一分钟的生活，那估计这个人一定能做出一番大事业。<h3 id="2月10日"><a href="#2月10日" class="headerlink" title="2月10日"></a>2月10日</h3></li>
+<li>放假的第一天，一大早7点半就被闹钟吵醒了，而且生物钟还没调整过来。</li>
+<li>放假的这几天该如何安排是个问题，健身房也关了门没法去锻炼，在家又没啥动力锻炼。</li>
+<li>上班的时候每天都想着放假，但放假第一天就感觉到无聊想上班了，毕竟上班能有钱可以拿，有钱才能真正的快乐啊！<h3 id="2月11日"><a href="#2月11日" class="headerlink" title="2月11日"></a>2月11日</h3></li>
+<li>一年一度的电脑桌面清理、垃圾文件处理。从我接触到的同学和同事来看，大部分人在电脑桌面上都铺满了各种各样的文件，他们看着不乱不难受吗？</li>
+<li>大部分人都只会基础的电脑操作技巧，不会花功夫在如何更好的使用电脑上。电脑出了问题后也不会自己去搜索引擎上找原因而是去问别人或者直接换电脑（人傻钱多），真的是不太理解。</li>
+<li>好家伙本来是看到C盘剩余空间还有50G，寻思可能会卡，所以用DiskGenius把D盘和C盘合并了，结果电脑直接重启进入Bios死活退出不了。百度了好久没有解决办法，只好拿U盘做了系统恢复，进去一看好家伙C盘被清空了。没办法研究了一整天最后结果只能重装系统，再把一些软件重新安装一遍，真的是手贱多出来这么一件事，浪费了几乎一天的时间。</li>
+<li>洗澡的时候想出了一句对联：只要钱到位，啥活俺都会！只要钱到位，再苦不嫌累！<h3 id="2月12日"><a href="#2月12日" class="headerlink" title="2月12日"></a>2月12日</h3></li>
+<li>不作死就不会死，一早起来发现电脑又死机了。就因为想扩展C盘空间结果两天电脑都没能弄好。电脑开机，死机，重启，这样循环了不知道多少遍了。不过通过这件事，我深深体会到了数据存储和备份的重要性。</li>
+<li>控制变量法真的是好东西，帮我解决了人生中不少的问题。</li>
+<li>今天大年初一，我跟我妈分别骑共享单车（美团）和电动车去外婆家过年，路上人烟稀少。<h3 id="2月13日"><a href="#2月13日" class="headerlink" title="2月13日"></a>2月13日</h3></li>
+<li>今天又一次重装系统了，还买了移动硬盘来存储数据，希望电脑别再出问题了。</li>
+<li>不要指望别人能完全理解你，也不要对别人抱太多期望。</li>
+<li>今天算了下目前还剩70671.5+411.77+1042.12+2573.56+14896.71。</li>
+</ul>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Andy Yin</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://yinzhm.gitee.io/2021/01/24/2021%E6%97%A5%E8%AE%B0/">http://yinzhm.gitee.io/2021/01/24/2021%E6%97%A5%E8%AE%B0/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://yinzhm.gitee.io">Gemini1996</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/Gemini1996/assets@master/imgs/cover/cover-13.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><nav class="pagination_post" id="pagination"><div class="next-post pull-full"><a href="/2021/01/17/2020%E5%B9%B4%E5%BA%A6%E6%80%BB%E7%BB%93/"><img class="next_cover lazyload" data-src="https://cdn.jsdelivr.net/gh/Gemini1996/assets@master/imgs/cover/cover-13.jpg" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/Gemini1996/assets@master/imgs/blog/404.jpg'"><div class="label">下一篇</div><div class="next_info"><span>2020年度总结</span></div></a></div></nav><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var notify = false == true ? true : false;
+var verify = false == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'vg1ALAcP6fVaieN3qWltnlg7-gzGzoHsz',
+  appKey:'0cALSC4fUb4x8aF6kUQxe5uF',
+  placeholder:'快来评论吧~',
+  avatar:'monsterid',
+  guest_info:guest_info,
+  pageSize:'10',
+  lang:'zh-cn',
+  recordIP: true
+});</script></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2021 By Andy Yin</div><div class="framework-info"><span>驱动 </span><a href="http://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div><div class="footer_custom_text">Welcome to my blog!</div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><i class="darkmode fa fa-moon-o" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="目录" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script id="ribbon_piao" mobile="false" src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/piao.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script><script src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/click_heart.js"></script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div></body></html>

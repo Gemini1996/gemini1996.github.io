@@ -1,0 +1,285 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"><title>PS技巧 | Gemini1996</title><meta name="description" content="PS技巧"><meta name="keywords" content="Photoshop"><meta name="author" content="Andy Yin"><meta name="copyright" content="Andy Yin"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Gemini1996/assets@master/imgs/blog/favicon.ico"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin><link rel="preconnect" href="//busuanzi.ibruce.info"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="PS技巧"><meta name="twitter:description" content="PS技巧"><meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/Gemini1996/assets@master/imgs/cover/cover-10.jpg"><meta property="og:type" content="article"><meta property="og:title" content="PS技巧"><meta property="og:url" content="http://yinzhm.gitee.io/2020/02/04/PS%E6%8A%80%E5%B7%A7/"><meta property="og:site_name" content="Gemini1996"><meta property="og:description" content="PS技巧"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/Gemini1996/assets@master/imgs/cover/cover-10.jpg"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = 'true'
+var t = Cookies.get("theme");
+if (autoChangeMode == '1'){
+const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+if (t === undefined){
+  if (isLightMode) activateLightMode()
+  else if (isDarkMode) activateDarkMode()
+  else if (isNotSpecified || hasNoSupport){
+    console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+    now = new Date();
+    hour = now.getHours();
+    isNight = hour < 6 || hour >= 18
+    isNight ? activateDarkMode() : activateLightMode()
+}
+} else if (t == 'light') activateLightMode()
+else activateDarkMode()
+
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="canonical" href="http://yinzhm.gitee.io/2020/02/04/PS%E6%8A%80%E5%B7%A7/"><link rel="prev" title="摄影知识" href="http://yinzhm.gitee.io/2020/02/20/%E6%91%84%E5%BD%B1%E7%9F%A5%E8%AF%86/"><link rel="next" title="重庆之行" href="http://yinzhm.gitee.io/2020/01/10/%E9%87%8D%E5%BA%86%E4%B9%8B%E8%A1%8C/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  translate: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    title: 'Snackbar.bookmark.title',
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: {"languages":{"author":"作者: Andy Yin","link":"链接: http://yinzhm.gitee.io/2020/02/04/PS%E6%8A%80%E5%B7%A7/","source":"来源: Gemini1996","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  baiduPush: false,
+  isHome: false,
+  isPost: true
+  
+}</script><meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="Gemini1996" type="application/atom+xml">
+</head><body><header> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">Gemini1996</a></span><span class="toggle-menu pull_right close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 个人主页</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa-fw fa fa-sitemap" aria-hidden="true"></i><span> 文章整合</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 文章归档</span></a></li><li><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 所有标签</span></a></li><li><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类查看</span></a></li></ul></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> 娱乐放松</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/categories/%E7%9B%B8%E5%86%8C"><i class="fa-fw fa-fw fa fa-image"></i><span> 所有相册</span></a></li><li><a class="site-page" href="/categories/%E9%9F%B3%E4%B9%90"><i class="fa-fw fa fa-music"></i><span> 音乐分享</span></a></li><li><a class="site-page" href="/project/"><i class="fa-fw fa fa-heart"></i><span> 项目查看</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-info"></i><span> 关于博主</span></a></div></div></span><span class="pull_right" id="search_button"><a class="site-page social-icon search"><i class="fa fa-search fa-fw"></i><span> 搜索文章</span></a></span></div></header><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="https://cdn.jsdelivr.net/gh/Gemini1996/assets@master/imgs/blog/avatar.jpg" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/Gemini1996/assets@master/imgs/blog/friend_404.gif'" alt="avatar"></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">18</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">7</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">9</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 个人主页</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa-fw fa fa-sitemap" aria-hidden="true"></i><span> 文章整合</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 文章归档</span></a></li><li><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 所有标签</span></a></li><li><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类查看</span></a></li></ul></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> 娱乐放松</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/categories/%E7%9B%B8%E5%86%8C"><i class="fa-fw fa-fw fa fa-image"></i><span> 所有相册</span></a></li><li><a class="site-page" href="/categories/%E9%9F%B3%E4%B9%90"><i class="fa-fw fa fa-music"></i><span> 音乐分享</span></a></li><li><a class="site-page" href="/project/"><i class="fa-fw fa fa-heart"></i><span> 项目查看</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fa fa-info"></i><span> 关于博主</span></a></div></div></div><div id="mobile-sidebar-toc"><div class="toc_mobile_headline">目录</div><div class="sidebar-toc__content"><ol class="toc_mobile_items"><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#基础操作"><span class="toc_mobile_items-number">1.</span> <span class="toc_mobile_items-text">基础操作</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#工具介绍"><span class="toc_mobile_items-number">2.</span> <span class="toc_mobile_items-text">工具介绍</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#通道和蒙版"><span class="toc_mobile_items-number">3.</span> <span class="toc_mobile_items-text">通道和蒙版</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#通道"><span class="toc_mobile_items-number">3.1.</span> <span class="toc_mobile_items-text">通道</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#蒙版"><span class="toc_mobile_items-number">3.2.</span> <span class="toc_mobile_items-text">蒙版</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#色彩调整：图像-调整"><span class="toc_mobile_items-number">4.</span> <span class="toc_mobile_items-text">色彩调整：图像 - 调整</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#选择并遮住功能"><span class="toc_mobile_items-number">5.</span> <span class="toc_mobile_items-text">选择并遮住功能</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#Camera-Raw滤镜"><span class="toc_mobile_items-number">6.</span> <span class="toc_mobile_items-text">Camera Raw滤镜</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#参数面板"><span class="toc_mobile_items-number">6.1.</span> <span class="toc_mobile_items-text">参数面板</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#调整面板"><span class="toc_mobile_items-number">6.2.</span> <span class="toc_mobile_items-text">调整面板</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#贴入-图片背景替换"><span class="toc_mobile_items-number">7.</span> <span class="toc_mobile_items-text">贴入 - 图片背景替换</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#通透"><span class="toc_mobile_items-number">8.</span> <span class="toc_mobile_items-text">通透</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#应用"><span class="toc_mobile_items-number">9.</span> <span class="toc_mobile_items-text">应用</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#1、衣服换色"><span class="toc_mobile_items-number">9.1.</span> <span class="toc_mobile_items-text">1、衣服换色</span></a><ol class="toc_mobile_items-child"><li class="toc_mobile_items-item toc_mobile_items-level-4"><a class="toc_mobile_items-link" href="#方案一"><span class="toc_mobile_items-number">9.1.1.</span> <span class="toc_mobile_items-text">方案一</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-4"><a class="toc_mobile_items-link" href="#方案二"><span class="toc_mobile_items-number">9.1.2.</span> <span class="toc_mobile_items-text">方案二</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#2、混合剪贴法去杂边"><span class="toc_mobile_items-number">9.2.</span> <span class="toc_mobile_items-text">2、混合剪贴法去杂边</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#3、调整白平衡"><span class="toc_mobile_items-number">9.3.</span> <span class="toc_mobile_items-text">3、调整白平衡</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#4、混合画笔磨皮"><span class="toc_mobile_items-number">9.4.</span> <span class="toc_mobile_items-text">4、混合画笔磨皮</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#5、降噪"><span class="toc_mobile_items-number">9.5.</span> <span class="toc_mobile_items-text">5、降噪</span></a></li></ol></li><li class="toc_mobile_items-item toc_mobile_items-level-2"><a class="toc_mobile_items-link" href="#调色"><span class="toc_mobile_items-number">10.</span> <span class="toc_mobile_items-text">调色</span></a></li></ol></div></div></div><div id="body-wrap"><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true">     </i><div class="auto_open" id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#基础操作"><span class="toc-number">1.</span> <span class="toc-text">基础操作</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#工具介绍"><span class="toc-number">2.</span> <span class="toc-text">工具介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#通道和蒙版"><span class="toc-number">3.</span> <span class="toc-text">通道和蒙版</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#通道"><span class="toc-number">3.1.</span> <span class="toc-text">通道</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#蒙版"><span class="toc-number">3.2.</span> <span class="toc-text">蒙版</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#色彩调整：图像-调整"><span class="toc-number">4.</span> <span class="toc-text">色彩调整：图像 - 调整</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#选择并遮住功能"><span class="toc-number">5.</span> <span class="toc-text">选择并遮住功能</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Camera-Raw滤镜"><span class="toc-number">6.</span> <span class="toc-text">Camera Raw滤镜</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#参数面板"><span class="toc-number">6.1.</span> <span class="toc-text">参数面板</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#调整面板"><span class="toc-number">6.2.</span> <span class="toc-text">调整面板</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#贴入-图片背景替换"><span class="toc-number">7.</span> <span class="toc-text">贴入 - 图片背景替换</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#通透"><span class="toc-number">8.</span> <span class="toc-text">通透</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#应用"><span class="toc-number">9.</span> <span class="toc-text">应用</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1、衣服换色"><span class="toc-number">9.1.</span> <span class="toc-text">1、衣服换色</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#方案一"><span class="toc-number">9.1.1.</span> <span class="toc-text">方案一</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#方案二"><span class="toc-number">9.1.2.</span> <span class="toc-text">方案二</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2、混合剪贴法去杂边"><span class="toc-number">9.2.</span> <span class="toc-text">2、混合剪贴法去杂边</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3、调整白平衡"><span class="toc-number">9.3.</span> <span class="toc-text">3、调整白平衡</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4、混合画笔磨皮"><span class="toc-number">9.4.</span> <span class="toc-text">4、混合画笔磨皮</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5、降噪"><span class="toc-number">9.5.</span> <span class="toc-text">5、降噪</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#调色"><span class="toc-number">10.</span> <span class="toc-text">调色</span></a></li></ol></div></div></div><main id="content-outer"><div id="top-container" style="background-image: url(https://cdn.jsdelivr.net/gh/Gemini1996/assets@master/imgs/cover/cover-10.jpg)"><div id="post-info"><div id="post-title"><div class="posttitle">PS技巧</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 发表于 2020-02-04<span class="post-meta__separator">|</span><i class="fa fa-history fa-fw" aria-hidden="true"></i> 更新于 2021-01-03</time><span class="post-meta__separator">|</span><span><i class="fa fa-inbox post-meta__icon fa-fw" aria-hidden="true"></i><a class="post-meta__categories" href="/categories/Photoshop/">Photoshop</a></span><div class="post-meta-wordcount"><div class="post-meta-pv-cv"><span><i class="fa fa-eye post-meta__icon fa-fw" aria-hidden="true"> </i>阅读量:</span><span id="busuanzi_value_page_pv"></span></div></div></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><h2 id="基础操作"><a href="#基础操作" class="headerlink" title="基础操作"></a>基础操作</h2><p>1、新建图层：Ctrl + Shift + N<br>2、图片转化为图层：Alt + 双击图片<br>3、反选：Ctrl + Shift + I<br>4、放大/缩小画笔：[ / ]。当失灵的状态下，按住ctrl+空格一般就好了<br>5、取消选区：Ctrl + D<br>6、撤销：Ctrl + Alt + Z<br>7、旋转工具：R<br>8、标尺：Ctrl + R<br>9、自由变换：Ctrl + T<br>10、全屏/窗口切换：F<br>11、自动色调：Ctrl + Shift + L<br>12、前景色/背景色切换：X<br>13、前景色/背景色重置：D<br>14、新建图层：Ctrl + Shift +  N<br>15、复制图层：Alt + 左键拖动到想要的位置 / Ctrl + J<br>16、图层上下移：Ctrl + [ / ]<br>17、取消选区：Ctrl + D<br>18、重新选择选区：Ctrl + Shift + D<br>19、羽化：Shift + F6</p>
+<h2 id="工具介绍"><a href="#工具介绍" class="headerlink" title="工具介绍"></a>工具介绍</h2><p>1、选框工具M</p>
+<ul>
+<li>Shift + 鼠标：绘制正方形或其他正图形</li>
+<li>Alt + 鼠标：由中心向四周绘制图形</li>
+<li>Shift + Alt +鼠标：由中心向四周绘制正图形</li>
+</ul>
+<p>2、套索工具L：绘制任意选区。Delete删除多余的节点，Esc取消绘制，双击或回车或按住Ctrl+左键点击进行快速交接。</p>
+<ul>
+<li>套索工具：用来选择物体。按住鼠标沿对象边缘拖动至起点结束，松开鼠标即完成（如果拖动过程中松开鼠标它会自动闭合完成）。只能用于大致选区，不适于精细选取</li>
+<li><strong>多边形套索工具</strong>：可绘制以直线为边的多边形选区，按住Shift可绘制垂直、水平、45度直线。指向起点时光标下会有一个圆圈，单击闭合；如果不在起始点，双击闭合</li>
+<li><strong>磁性套索工具</strong>：根据物体的轮廓（沿着颜色的边缘自动产生节点）来进行选择。按住鼠标沿着对象移动时会自动形成节点。选择时可以根据需要调节频率，以适应增减节点。磁性套索可以通过Alt键，与套索工具进行快速切换</li>
+</ul>
+<p>3、快速选择工具W</p>
+<ul>
+<li><strong>快速选择工具</strong>：可以根据需要调节画笔大小、硬度和间距。单击鼠标或拖动；按住Alt键减选区，按住Shift键加选区</li>
+<li>魔棒工具：根据颜色的相似程度来进行选择。<strong>适合抠颜色单一的图像，比如纯色背景</strong></li>
+</ul>
+<p>4、移动工具V </p>
+<ul>
+<li>跨文档移动图层时，移到新文档时按住Shift键可以按照原来的位置放在新文档图层中</li>
+<li>按住Shift可以约束移动角度</li>
+<li>方向键可以轻微移动图像，方向键+Shift可以增加移动步长</li>
+<li><strong>在其他工具状态下，按住Ctrl键可以变成移动工具</strong></li>
+<li>按Ctrl + Alt + 鼠标左键拖动可以进行复制图层 </li>
+<li>选中两个及以上图层，按Ctrl + G，就能快捷编组；或新建组，把图层拖拽进去</li>
+</ul>
+<p>5、历史工具：</p>
+<ul>
+<li>历史记录是不会被存储的，关闭文档后重新打开就没记录了</li>
+<li>删除某一历史记录就会把它下面所有记录都删除</li>
+<li>允许非线性历史记录删除某一步后不会删除其下面的所有步骤</li>
+<li>还原多步：Ctrl+Alt+Z</li>
+<li>前进多步：Ctrl+Shift+Z</li>
+<li>历史记录画笔(Y)使用后回到历史记录面板中选则的历史源状态，可更改历史源</li>
+</ul>
+<p>6、画笔工具B</p>
+<ul>
+<li>画笔工具下(B)按住Shift可画直线，或连接两点画直线</li>
+<li>按住Alt，拾取颜色</li>
+<li>选择颜色：Shift+Alt+鼠标右键可选择色环中的颜色</li>
+<li>改变画笔大小：”[]” / “]”  或Alt+鼠标右键水平移动</li>
+<li>改变画笔硬度：Shift+ “[]” / “]”，或Alt+鼠标右键垂直移动</li>
+</ul>
+<p>7、修复工具J<br>修复工具（污点修复画笔工具、修复画笔工具、修补工具、红眼工具）用于修相片。</p>
+<ul>
+<li>修复画笔：可以修掉不想要的图案，用Alt键先定义一块替代的图案区域，然后直接涂抹目标要去掉的图案。</li>
+<li>污点修复画笔：可以修复污点，对大的图案进行连续涂抹使其消失。但是与周边过渡一般。选择类型的内容识别，效果最好。<strong>去照片水印可用污点修复画笔</strong><br>修复画笔。</li>
+<li>修补工具：修补工具分为源和目标，先做选区然后拖动到目标区域。源让目标位置内容填充替换选区内容。目标为复制选区内容到目标位置，并和周围融合。可以先用其他选择工具建立选区，再用修补工具移动。也可用修补工具直接做选区</li>
+<li>红眼工具：在光线较暗的环境下拍摄人物时，人眼的瞳孔会放大，让更多的光线通过，因此视网膜的血管就会在照片上产生泛红现象，红眼工具就可以去除这些现象。</li>
+<li>内容感知移动工具：分为移动和扩展。做选区后移动可以把内容移动到制定位置，原位置<br>自动替换周边环境。扩展模式是复制选中图像，自动与周边融合。</li>
+</ul>
+<p>8、油漆桶工具G<br>在编辑 - 填充中可以填充选中的图层区域（快捷键Shift + F5或Shift + Backspace）</p>
+<p>9、自由变换Shift + T<br>变换以参考点为中心进行转动。参考点可直接按住alt然后点击目标位置，参考点可移动到自由变换区外。<strong>变换加复制就是Ctrl + Alt + Shift + T</strong>。Alt + 鼠标拖动可以按参考点为中心等比例缩放。按住Shift旋转可以按15度每次旋转。</p>
+<p>10、钢笔工具P</p>
+<ul>
+<li>建立路径工具栏选择路径，或在路径面板上新建路径进行绘制。</li>
+<li>路径是一种矢量的线，不是像素。</li>
+<li>路径/直接选择工具A：黑色箭头(Ctrl)表示选择路径，白色箭头(Ctrl)表示选择锚点或控杆，Alt + 鼠标移动表示复制路径。钢笔状态下按Ctrl可变成直接选择工具，选中路径后可删除或添加锚点，移动锚点或片段。</li>
+<li>按住Alt键可单独调节一边的控杆。</li>
+<li>选择锚点后按住shift可锁定角度进行控杆长短调节。</li>
+<li>直线点与曲线点转化：选择路径中的锚点后直接点击，可转换锚点性质。也可通过选择路径两边的对应控杆缩短到锚点，则该路径变成直线。</li>
+<li>建立半曲线点：半曲线点指两个控杆可单独调节角度。在钢笔绘制路径时，当绘制完一个锚点后<strong>按住Alt点击该锚点</strong>，则该锚点只会有一个控杆，形成一个半曲线点，方便下一步路径转角。</li>
+</ul>
+<p>11、操控变形<br><strong>编辑 - 操控变形</strong>，鼠标点击扎图钉扎好图钉后，选择一个图钉进行拖动，就可操控变形。图钉深度可决定移动到前一层还是后一层。</p>
+<p>12、内容识别缩放<br>改变图片尺寸但保护指定内容不变形。对要保持长宽的物体做一个选区，不需要精确，然后存入Alpha通道，然后<strong>编辑 - 内容识别缩放</strong>，在选项栏里选择<strong>保护 - Alpha1</strong>。然后可对图像进行拉伸，但是被保护的内容不会被拉伸。</p>
+<p>13、仿制图章工具S</p>
+<ul>
+<li>按Alt取样，然后在目标位置点击进行涂抹。</li>
+<li>注意：<strong>要点击选中当前和下方图层</strong>。</li>
+<li>仿制图章工具的不足是只能原样复制，不能和周边环境融合。</li>
+</ul>
+<h2 id="通道和蒙版"><a href="#通道和蒙版" class="headerlink" title="通道和蒙版"></a>通道和蒙版</h2><h3 id="通道"><a href="#通道" class="headerlink" title="通道"></a>通道</h3><p><strong>通道最基本的作用是存储颜色信息</strong>，通道是8位的，有256个颜色，从黑到白256个位置，存储颜色信息即为颜色通道，存储选择信息就是alpha通道，黑白完全可以记录选取非选取。</p>
+<ul>
+<li>新建Alpha通道：做好选区，右击存储选区或通道面板下点击将选区存储为通道</li>
+<li>通道做选区的步骤：<ul>
+<li>挑选通道：选择一个认为能解决问题的通道（黑白关系+清晰轮廓+灰度关系+半透明关系）</li>
+<li>复制通道：为了转成选区即Alpha通道</li>
+<li>调节色阶：Ctrl + L ，为了让黑白或灰度最大化，已达到更准确的选区，也就是让黑白更明显；如果调节半透明的选区，则挑出更多灰度</li>
+<li>载入选区：Ctrl + 点击通道</li>
+<li>通过选区建立图层：Ctrl+J</li>
+</ul>
+</li>
+<li>剪贴蒙版：按Ctrl + Alt + G创建 或 图层 - 创建剪贴蒙版。还可以选中一个图层按住Alt然后鼠标移动到它和下一个图层的夹缝显示剪贴蒙版图标后点击即可，第一个图层就成了被剪贴蒙版。按Alt再点击缝就可以释放剪贴蒙版。选中图层建立被剪贴蒙版，可让该图层进入下一层的图层，上面图层的内容就只能在下面图层的内容里显示。剪贴蒙版还可针对多个图层全部进入一个图层进行操作，还是Ctrl + Alt + G。注意，组只能作为剪贴蒙版，不能做为被剪贴蒙版。<h3 id="蒙版"><a href="#蒙版" class="headerlink" title="蒙版"></a>蒙版</h3></li>
+</ul>
+<p><strong>控制图层的选择范围即为图层蒙版</strong>，它是一个临时通道，具有通道的所有属性，用笔刷工具进行绘制。多数情况下，防止对原始素材进行破坏，图层蒙版最大的好处是只需要做一个遮挡，随时通过黑白两种颜色的调用显示或遮住，或通过灰颜色的介入半透明显示。</p>
+<ul>
+<li>按住Alt点击蒙版缩略图，可以直接显示蒙版进行编辑，图层蒙版编辑状态下就是个临时Alpha通道，此时通道内也可见此蒙版。</li>
+<li>不想用图层蒙版可以Shift点击或直接右击蒙版选择停用。</li>
+<li>快速蒙版(Q)是临时Alpha通道，在选择菜单里有。快速蒙版用于选区初步建立后进行调节选区，黑色是减少选区，白色是增加选区。可用填充黑白等各种工具对快速蒙版进行操作。快速蒙版优势在于可与图层叠加显示，直接在类似图层上进行操作，而通道里看不到图层，调整没有快速蒙版方便。</li>
+</ul>
+<h2 id="色彩调整：图像-调整"><a href="#色彩调整：图像-调整" class="headerlink" title="色彩调整：图像 - 调整"></a>色彩调整：图像 - 调整</h2><p>1、亮度/对比度：可使图像亮度加亮/变暗，颜色对比分明<br>2、色阶：用直方图描述出的整张图片的明暗信息，修改色阶其实就是扩大照片的动态范围<br>3、<strong>曲线</strong>：可以调整亮度、色阶、对比度、色调</p>
+<ul>
+<li>高斯曲线/S曲线（暗部的更暗，亮部的更亮）</li>
+</ul>
+<p>4、色相/饱和度：调整图像偏色和颜色鲜艳程度。最底下滑块有4个小三角，代表所选颜色范围。两端的浅灰色部分是容差值，即不跟随变化而变化。缩小容差值能使选择范围更精确。如果图像中有多个地方与需调节区域颜色相同时，利用选择工具大概选出范围，不用做精确选区。（重要）<br>5、色彩平衡：调节图片冷暖色调<br>6、<strong>匹配颜色（重要）</strong>：使两张或多张图片的颜色倾向一个色调，使得图片的色调统一<br>7、通道混合器：可以用来调色，使用单色来得到高品质的细节丰富的<strong>灰度图</strong>（可以调节通道）。<strong>功能类似于黑白</strong><br>8、渐变/映射：可以用自己定义的渐变直接映射原来的色彩空间<br>9、照片滤镜：相当于照相时在镜头前加滤镜产生的效果<br>10、<strong>阴影/高光</strong>：专门对暗部和高光部分自动调整校正，用来修改逆光照片<br>11、阈值：得到黑白图，用来提线稿，（阈值，色阶大于阈值变白，小于阈值变黑）。先做滤镜（其他-高反差保留，将高反差的地方保留，比如说明暗交界线，颜色分界线保留下来），再做阈值，可以得到细节较多的黑白图</p>
+<h2 id="选择并遮住功能"><a href="#选择并遮住功能" class="headerlink" title="选择并遮住功能"></a>选择并遮住功能</h2><ul>
+<li>快捷键： Ctrl + Alt + R</li>
+<li>快速选择工具：在画面上选择需要抠取的部分进行涂抹</li>
+<li>智能半径（建议打开）：对半径的识别方式进行智能计算，识别图像上特殊的边缘，<strong>一般增大半径</strong></li>
+<li>移动边缘：在半径的基础上选区向内收或者向外扩</li>
+<li>调整边缘画笔工具：在头发边缘涂抹，抠取出边缘头发</li>
+<li>平滑可以消除锯齿，使得边缘变得柔和光滑（一般加5左右）。羽化可以使边缘从不透明到透明的过度。增强羽化适合抠比较柔和、梦幻的对象。对比度让边缘变得分明、清晰，和羽化相反</li>
+<li>净化颜色可以去除边边角角的白边</li>
+<li>输出设置：输出到<strong>新建带有图层蒙版的图层</strong></li>
+<li>选中修改后的蒙版拖动至回收站删除蒙版，这样可以保存透明层，然后点击锁定透明图层，用黑色画笔涂抹边缘，则可把半透明的未显示的毛发刷出来</li>
+<li>头发边缘白边处理：Ctrl + J 复制图层，右键蒙版 - 应用图层蒙版，点击图层菜单 - 修边 - 移去白色杂边</li>
+<li>头发边缘黑边处理：点击图层菜单 - 修边 - 去边（1像素）</li>
+<li>头发周围细节处理：新建图层，右键创建剪贴蒙版，选择画笔工具，按住Alt取样正确的头发颜色，在头发边缘进行涂抹</li>
+</ul>
+<h2 id="Camera-Raw滤镜"><a href="#Camera-Raw滤镜" class="headerlink" title="Camera Raw滤镜"></a>Camera Raw滤镜</h2><ul>
+<li>快捷方式：Ctrl + Shift + A</li>
+<li>Camera Raw的调整界面，左边就是调整面板，右上方是直方图，直方图下面，就是各种参数的调整面板。要想取消调整可以按Alt + 单击取消进行复位。</li>
+</ul>
+<h3 id="参数面板"><a href="#参数面板" class="headerlink" title="参数面板"></a>参数面板</h3><p>1、基本</p>
+<ul>
+<li>调整曝光、高光、阴影、白色、黑色技巧（按住Alt再拖动滑块使画面纯黑/纯白，无杂色为最佳）</li>
+<li>白平衡：<strong>色温</strong>、<strong>色调</strong></li>
+<li>曝光、对比度、<strong>高光</strong>、<strong>阴影</strong>、白色、黑色</li>
+<li>清晰度、去除薄雾、自然饱和度、饱和度</li>
+</ul>
+<p>2、色调曲线（参数模式 / 点模式）<br>  曲线的横轴代表亮度（高光，亮调，暗调，投影），左侧为最暗（阴影），右侧为最亮（高光）。当曲线高于基准线时，此处就变亮；反之，低于基准线则变暗。</p>
+<p>3、细节</p>
+<ul>
+<li>锐化（使照片更加清晰）</li>
+<li>减少杂色（降低由于曝光不足而强行提高亮度导致的噪点）</li>
+</ul>
+<p>4、HSL调整</p>
+<ul>
+<li>色相：适合于照片中颜色的微调，对某个颜色不太满意，想要使某个颜色偏色，就使用“色相”面板中的滑块来进行调整</li>
+<li>饱和度：针对各个颜色来调整<strong>色彩浓淡</strong>的</li>
+<li>明亮度：针对某个色彩来调整<strong>颜色深浅</strong>的</li>
+</ul>
+<p>5、分离色调<br>  将不同的颜色用于图像的亮部和暗部。比如我们要调整高光区域的颜色，就拖动上面的色相滑块来定义高光区域颜色，再调整饱和度滑块，来定义色彩浓淡。这个功能不同于一般的图像颜色校正，一般能起到给照片定义整体色调的作用。</p>
+<p>6、镜头校正<br>改善镜头拍摄照片存在的几何形变。</p>
+<ul>
+<li>扭曲度：鼠标拖动滑块来控制照片的畸变是向内收缩还是向外扩张</li>
+<li>去边：色相用来选择照片中出现的色差的颜色，用于精确选中色差的颜色并去除。数量代表去除的程度，数量越多去除的力度越大。</li>
+<li>晕影：手动压暗或提亮照片四周曝光，比如可以修复暗角，使图像边缘角落变亮</li>
+</ul>
+<p>7、效果<br>平时拍摄时，由于雾霾或者逆光，导致照片灰度很大，可以使用这个工具进行调节，增加照片的通透感。</p>
+<ul>
+<li>裁剪后晕影：作用是给照片添加亮角或暗角。</li>
+</ul>
+<h3 id="调整面板"><a href="#调整面板" class="headerlink" title="调整面板"></a>调整面板</h3><p>1、白平衡工具：单击图片中自己认为是中性灰的位置，它会自动设置图像的白平衡</p>
+<p>2、目标调整工具</p>
+<ul>
+<li>参数曲线：曲线的横轴代表亮度，左侧为最暗，右侧为最亮。当曲线高于基准线时，此处就变亮;反之，低于基准线则变暗。</li>
+<li>色相：右侧界面自动跳转到<strong>HSL调整</strong>中的色相</li>
+<li>饱和度：右侧界面自动跳转到<strong>HSL调整</strong>中的饱和度</li>
+<li>明亮度：右侧界面自动跳转到<strong>HSL调整</strong>中的明亮度</li>
+</ul>
+<h2 id="贴入-图片背景替换"><a href="#贴入-图片背景替换" class="headerlink" title="贴入 - 图片背景替换"></a>贴入 - 图片背景替换</h2><p>贴入命令的用法是将拷贝的图像显示在选区内，选区以外的图像会自动出现蒙版。</p>
+<ul>
+<li>先将要使用的背景图片进行复制</li>
+<li>然后在需要更换背景的图片上<strong>选择选区</strong></li>
+<li>编辑-选择性粘贴-贴入（快捷键：Alt+Shift+Ctrl+V）便能以当前选择作为图层蒙版进行背景更换。</li>
+</ul>
+<h2 id="通透"><a href="#通透" class="headerlink" title="通透"></a>通透</h2><p>1、通透：通明透亮。通明透亮就是要解决光色的原始性和纯粹性。也就是说对光色原色的最少的干扰，画面就会产生最大的通透感。<br>2、<strong>CMY</strong>是青（Cyan）、洋红或品红（Magenta）和黄（Yellow）三种颜色的简写，是<strong>相减混色模式</strong>，用这种方法产生的颜色之所以称为相减色，是因为它减少了为视觉系统识别颜色所需要的反射光。<strong>RGB</strong>是红（Red）、绿（Green）和蓝（Blue）三种颜色的简写，是<strong>相加混色模式</strong>，每种颜色分量越多，得到的颜色越亮，每种颜色的取值范围为0~255。<strong>HSL</strong>即色相、饱和度和亮度（Hue, Saturation, Lightness）。色相（H）是色彩的基本属性，就是平常所说的颜色名称，如红色、黄色等。饱和度（S）是指色彩的纯度，越高色彩越纯，低则逐渐变灰，取0-100%的数值。亮度（L），取0-100%。<br>3、红绿蓝中蕴含青品黄，青品黄中也蕴含红绿蓝，红色的支持色是黄色和品红色，互补色是青色；绿色的支持色分别是青色和黄色，互补色是品红色；蓝色的支持色分别是青色和品红色，互补色是黄色。<br>这就意味着要想拍出非常漂亮的晚霞火烧云，就需要在这个颜色中加黄色和品红色就可以了，同时要减少青色的干扰。同样，要想拍出非常漂亮的蓝天，只需要加品红色和青色，同时要减少黄色的干扰。如果要想拍出大草原的翠绿，只需要加青色和黄色，同时要减去品红色对它的干扰。<br>4、加色模式与减色模式其实讲的就是通过色相的混合最后产生对颜色明度的影响。<strong>加色模式就是颜色越加明度越高</strong>，比如说红色加绿色加蓝色最后得到中间的就是白色，白色的明度显然是最高的100 ，而其他的明度肯定小于100。<strong>减色模式则反之，颜色越加明度越低</strong>，比如洋红加黄色加青色，最后得到的就是黑色，黑色的明度为0，肯定比起他的色彩颜色会更低。</p>
+<h2 id="应用"><a href="#应用" class="headerlink" title="应用"></a>应用</h2><h3 id="1、衣服换色"><a href="#1、衣服换色" class="headerlink" title="1、衣服换色"></a>1、衣服换色</h3><h4 id="方案一"><a href="#方案一" class="headerlink" title="方案一"></a>方案一</h4><ul>
+<li>选择工具将衣服抠取出，Ctrl + J复制图层 或者 将衣服抠取出后创建蒙版  </li>
+<li>点击色相 / 饱和度，调整色相、饱和度，选择着色 或者 点击纯色，模式选为正片叠底</li>
+<li>Ctrl + Alt + G创建剪贴蒙版</li>
+</ul>
+<h4 id="方案二"><a href="#方案二" class="headerlink" title="方案二"></a>方案二</h4><ul>
+<li>点击色相 / 饱和度，点击取样，获取颜色衣服</li>
+<li>调整色相、饱和度、明度</li>
+</ul>
+<h3 id="2、混合剪贴法去杂边"><a href="#2、混合剪贴法去杂边" class="headerlink" title="2、混合剪贴法去杂边"></a>2、混合剪贴法去杂边</h3><ul>
+<li>挑选并复制适合的通道</li>
+<li>调整色阶Ctrl + L，让需要的选区跟背景有非常强烈的黑白对比</li>
+<li>载入选区Ctrl + 点击通道，反选Ctrl + Shift + I</li>
+<li>点击回到RGB图层，获取选区后直接调整边缘，生成带蒙版的新图层</li>
+<li>利用黑白画笔在蒙版上补充缺失的部分</li>
+<li>选中蒙版，点击删除蒙版，保证图层有透明区域(应用图层点应用)，新建图层(可在图层上创作内容)，执行图层-创建剪贴蒙版(Ctrl + Alt + G)，即上一层的内容会落到下一层的形状中去，模式选择颜色</li>
+<li>吸管工具吸取杂边周围颜色，再用画笔对杂边进行涂抹覆盖<h3 id="3、调整白平衡"><a href="#3、调整白平衡" class="headerlink" title="3、调整白平衡"></a>3、调整白平衡</h3>图像 - 调整 - 匹配颜色，点击中和</li>
+</ul>
+<h3 id="4、混合画笔磨皮"><a href="#4、混合画笔磨皮" class="headerlink" title="4、混合画笔磨皮"></a>4、混合画笔磨皮</h3><ul>
+<li>对人物皮肤颜色取样</li>
+<li>选择混合器画笔工具，参数为潮湿11%，载入80%，混合80%，流量20%</li>
+<li>使用画笔对人物皮肤进行涂抹</li>
+</ul>
+<h3 id="5、降噪"><a href="#5、降噪" class="headerlink" title="5、降噪"></a>5、降噪</h3><p>滤镜 - 杂色 - 减少杂色</p>
+<h2 id="调色"><a href="#调色" class="headerlink" title="调色"></a>调色</h2><p>校准一张照片的五要素</p>
+<ul>
+<li>正确的黑白场：它决定了色彩平衡的状态:在Camera Raw中调节曝光即定义黑白场时，按住Alt可以作为参数正常的监视器，黑色表示没有曝光，红色表示即将过爆，黄色表示已经有点过爆，白色表示曝光过度。</li>
+<li>准确的色彩还原：即定义灰场白平衡，调节色温和色调将中性灰的值调准，或直接一键使用白平衡。白平衡吸管工具照片18%中性灰（#808080）位置，没有则去找类似的灰色位置</li>
+<li>丰富且合理的层次(即有灰度值)：通过填充亮光来丰富暗部细节，调节暗部来丰富亮部细节</li>
+<li>足够的清晰度(相机参数设计里调高锐化值；Raw格式里调高清晰度，降低对比度；输出之前做锐化)</li>
+<li>适当的饱和度。</li>
+</ul>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Andy Yin</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://yinzhm.gitee.io/2020/02/04/PS%E6%8A%80%E5%B7%A7/">http://yinzhm.gitee.io/2020/02/04/PS%E6%8A%80%E5%B7%A7/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://yinzhm.gitee.io">Gemini1996</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Photoshop/">Photoshop    </a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/Gemini1996/assets@master/imgs/cover/cover-10.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><nav class="pagination_post" id="pagination"><div class="prev-post pull_left"><a href="/2020/02/20/%E6%91%84%E5%BD%B1%E7%9F%A5%E8%AF%86/"><img class="prev_cover lazyload" data-src="https://cdn.jsdelivr.net/gh/Gemini1996/assets@master/imgs/cover/cover-15.jpg" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/Gemini1996/assets@master/imgs/blog/404.jpg'"><div class="label">上一篇</div><div class="prev_info"><span>摄影知识</span></div></a></div><div class="next-post pull_right"><a href="/2020/01/10/%E9%87%8D%E5%BA%86%E4%B9%8B%E8%A1%8C/"><img class="next_cover lazyload" data-src="https://cdn.jsdelivr.net/gh/Gemini1996/assets@master/imgs/cover/cover-5.jpg" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/Gemini1996/assets@master/imgs/blog/404.jpg'"><div class="label">下一篇</div><div class="next_info"><span>重庆之行</span></div></a></div></nav><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var notify = false == true ? true : false;
+var verify = false == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'vg1ALAcP6fVaieN3qWltnlg7-gzGzoHsz',
+  appKey:'0cALSC4fUb4x8aF6kUQxe5uF',
+  placeholder:'快来评论吧~',
+  avatar:'monsterid',
+  guest_info:guest_info,
+  pageSize:'10',
+  lang:'zh-cn',
+  recordIP: true
+});</script></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2021 By Andy Yin</div><div class="framework-info"><span>驱动 </span><a href="http://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div><div class="footer_custom_text">Welcome to my blog!</div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><i class="darkmode fa fa-moon-o" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="目录" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script id="ribbon_piao" mobile="false" src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/piao.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script><script src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/click_heart.js"></script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div></body></html>
