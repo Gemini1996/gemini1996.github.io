@@ -1,0 +1,150 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"><title>乌合之众 | Andy Yin的个人空间</title><meta name="description" content="乌合之众"><meta name="author" content="Andy Yin"><meta name="copyright" content="Andy Yin"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/Gemini1996/assets@master/imgs/blog/favicon.ico"><link rel="preconnect" href="//cdn.jsdelivr.net"><link rel="preconnect" href="https://fonts.googleapis.com" crossorigin><link rel="preconnect" href="//busuanzi.ibruce.info"><meta name="twitter:card" content="summary"><meta name="twitter:title" content="乌合之众"><meta name="twitter:description" content="乌合之众"><meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/Gemini1996/assets@master/imgs/cover/cover-15.jpg"><meta property="og:type" content="article"><meta property="og:title" content="乌合之众"><meta property="og:url" content="http://yinzhm.gitee.io/2022/04/03/%E4%B9%8C%E5%90%88%E4%B9%8B%E4%BC%97/"><meta property="og:site_name" content="Andy Yin的个人空间"><meta property="og:description" content="乌合之众"><meta property="og:image" content="https://cdn.jsdelivr.net/gh/Gemini1996/assets@master/imgs/cover/cover-15.jpg"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><script src="https://cdn.jsdelivr.net/npm/js-cookie/dist/js.cookie.min.js"></script><script>const autoChangeMode = 'true'
+var t = Cookies.get("theme");
+if (autoChangeMode == '1'){
+const isDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+const isLightMode = window.matchMedia("(prefers-color-scheme: light)").matches
+const isNotSpecified = window.matchMedia("(prefers-color-scheme: no-preference)").matches
+const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+if (t === undefined){
+  if (isLightMode) activateLightMode()
+  else if (isDarkMode) activateDarkMode()
+  else if (isNotSpecified || hasNoSupport){
+    console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+    now = new Date();
+    hour = now.getHours();
+    isNight = hour < 6 || hour >= 18
+    isNight ? activateDarkMode() : activateLightMode()
+}
+} else if (t == 'light') activateLightMode()
+else activateDarkMode()
+
+
+} else if (autoChangeMode == '2'){
+  now = new Date();
+  hour = now.getHours();
+  isNight = hour < 6 || hour >= 18
+  if(t === undefined) isNight? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode() 
+} else {
+  if ( t == 'dark' ) activateDarkMode()
+  else if ( t == 'light') activateLightMode()
+}
+
+function activateDarkMode(){
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+    document.querySelector('meta[name="theme-color"]').setAttribute('content','#000')
+  }
+}
+function activateLightMode(){
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null){
+  document.querySelector('meta[name="theme-color"]').setAttribute('content','#fff')
+  }
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@latest/css/font-awesome.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="canonical" href="http://yinzhm.gitee.io/2022/04/03/%E4%B9%8C%E5%90%88%E4%B9%8B%E4%BC%97/"><link rel="next" title="运营之光" href="http://yinzhm.gitee.io/2022/03/20/%E8%BF%90%E8%90%A5%E4%B9%8B%E5%85%89/"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  translate: undefined,
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    title: 'Snackbar.bookmark.title',
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: true,
+  copyright: {"languages":{"author":"作者: Andy Yin","link":"链接: http://yinzhm.gitee.io/2022/04/03/%E4%B9%8C%E5%90%88%E4%B9%8B%E4%BC%97/","source":"来源: Andy Yin的个人空间","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  baiduPush: false,
+  isHome: false,
+  isPost: true
+  
+}</script><meta name="generator" content="Hexo 4.2.0"><link rel="alternate" href="/atom.xml" title="Andy Yin的个人空间" type="application/atom+xml">
+</head><body><header> <div id="page-header"><span class="pull_left" id="blog_name"><a class="blog_title" id="site-name" href="/">Andy Yin的个人空间</a></span><span class="toggle-menu pull_right close"><a class="site-page"><i class="fa fa-bars fa-fw" aria-hidden="true"></i></a></span><span class="pull_right menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 个人主页</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa-fw fa fa-sitemap" aria-hidden="true"></i><span> 文章整合</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 文章归档</span></a></li><li><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 所有标签</span></a></li><li><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类查看</span></a></li></ul></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> 娱乐放松</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/categories/%E7%9B%B8%E5%86%8C"><i class="fa-fw fa-fw fa fa-image"></i><span> 所有相册</span></a></li><li><a class="site-page" href="/categories/%E9%9F%B3%E4%B9%90"><i class="fa-fw fa fa-music"></i><span> 音乐分享</span></a></li><li><a class="site-page" href="/project/"><i class="fa-fw fa fa-heart"></i><span> 项目查看</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/webstack/"><i class="fa-fw fa fa-info"></i><span> 网站导航</span></a></div></div></span><span class="pull_right" id="search_button"><a class="site-page social-icon search"><i class="fa fa-search fa-fw"></i><span> 搜索文章</span></a></span></div></header><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="https://cdn.jsdelivr.net/gh/Gemini1996/assets@master/imgs/blog/avatar.jpg" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/Gemini1996/assets@master/imgs/blog/friend_404.gif'" alt="avatar"></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">29</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">9</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">9</div></a></div></div></div><hr><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fa fa-home"></i><span> 个人主页</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa-fw fa fa-sitemap" aria-hidden="true"></i><span> 文章整合</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/archives/"><i class="fa-fw fa fa-archive"></i><span> 文章归档</span></a></li><li><a class="site-page" href="/tags/"><i class="fa-fw fa fa-tags"></i><span> 所有标签</span></a></li><li><a class="site-page" href="/categories/"><i class="fa-fw fa fa-folder-open"></i><span> 分类查看</span></a></li></ul></div><div class="menus_item"><a class="site-page"><i class="fa-fw fa fa-list" aria-hidden="true"></i><span> 娱乐放松</span><i class="fa fa-chevron-down menus-expand" aria-hidden="true"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/categories/%E7%9B%B8%E5%86%8C"><i class="fa-fw fa-fw fa fa-image"></i><span> 所有相册</span></a></li><li><a class="site-page" href="/categories/%E9%9F%B3%E4%B9%90"><i class="fa-fw fa fa-music"></i><span> 音乐分享</span></a></li><li><a class="site-page" href="/project/"><i class="fa-fw fa fa-heart"></i><span> 项目查看</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/webstack/"><i class="fa-fw fa fa-info"></i><span> 网站导航</span></a></div></div></div><div id="mobile-sidebar-toc"><div class="toc_mobile_headline">目录</div><div class="sidebar-toc__content"><ol class="toc_mobile_items"><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#群体的一般特征"><span class="toc_mobile_items-number">1.</span> <span class="toc_mobile_items-text">群体的一般特征</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#群体的感情和道德观"><span class="toc_mobile_items-number">2.</span> <span class="toc_mobile_items-text">群体的感情和道德观</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#群体的观念、推理与想象力"><span class="toc_mobile_items-number">3.</span> <span class="toc_mobile_items-text">群体的观念、推理与想象力</span></a></li><li class="toc_mobile_items-item toc_mobile_items-level-3"><a class="toc_mobile_items-link" href="#总结"><span class="toc_mobile_items-number">4.</span> <span class="toc_mobile_items-text">总结</span></a></li></ol></div></div></div><div id="body-wrap"><i class="fa fa-arrow-right" id="toggle-sidebar" aria-hidden="true">     </i><div class="auto_open" id="sidebar"><div class="sidebar-toc"><div class="sidebar-toc__title">目录</div><div class="sidebar-toc__progress"><span class="progress-notice">你已经读了</span><span class="progress-num">0</span><span class="progress-percentage">%</span><div class="sidebar-toc__progress-bar">     </div></div><div class="sidebar-toc__content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#群体的一般特征"><span class="toc-number">1.</span> <span class="toc-text">群体的一般特征</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#群体的感情和道德观"><span class="toc-number">2.</span> <span class="toc-text">群体的感情和道德观</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#群体的观念、推理与想象力"><span class="toc-number">3.</span> <span class="toc-text">群体的观念、推理与想象力</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#总结"><span class="toc-number">4.</span> <span class="toc-text">总结</span></a></li></ol></div></div></div><main id="content-outer"><div id="top-container" style="background-image: url(https://cdn.jsdelivr.net/gh/Gemini1996/assets@master/imgs/cover/cover-15.jpg)"><div id="post-info"><div id="post-title"><div class="posttitle">乌合之众</div></div><div id="post-meta"><time class="post-meta__date"><i class="fa fa-calendar fa-fw" aria-hidden="true"></i> 发表于 2022-04-03<span class="post-meta__separator">|</span><i class="fa fa-history fa-fw" aria-hidden="true"></i> 更新于 2022-04-06</time><div class="post-meta-wordcount"><div class="post-meta-pv-cv"><span><i class="fa fa-eye post-meta__icon fa-fw" aria-hidden="true"> </i>阅读量:</span><span id="busuanzi_value_page_pv"></span></div></div></div></div></div><div class="layout layout_post" id="content-inner">   <article id="post"><div class="article-container" id="post-content"><h3 id="群体的一般特征"><a href="#群体的一般特征" class="headerlink" title="群体的一般特征"></a>群体的一般特征</h3><p>聚集成群的人，他们的感情和思想全都转到同一个方向，他们自觉的个性消失了，形成了一种集体心理。</p>
+<ul>
+<li>构成这个群体的个人不管是谁，他们的生活方式、职业、性格或智力不管相同还是不同，他们变成了一个群体这个事实，便使他们获得了一种集体心理，这使他们的感情、思想和行为变得与他们单独一人时的感情、思想和行为颇为不同。若不是形成了一个群体，有些闪念或感情在个人身上根本就不会产生，或不可能变成行动。</li>
+<li>在集体心理中，个人的才智被削弱了，从而他们的个性也被削弱了。异质性被同质性所吞没，无意识的品质占了上风。</li>
+<li>心理群体中的个人在某种暗示的影响下，他会因为难以抗拒的冲动而采取某种行动。因为暗示对群体中的所有个人有着同样的作用，相互影响使其力量大增。在群体中，具备强大的个性、足以抵制那种暗示的个人寥寥无几，因 此根本无法逆流而动。<br>有意识人格的消失，无意识人格的得势，思想和感情因暗示和相互传染作用而转向一个共同的方向，以及立刻把暗示的观念转化为行动的倾向，是组成群体的个人所表现出来的主要特点。他不再是他自己，他变成了一个不再受自己意志支配的玩偶。<h3 id="群体的感情和道德观"><a href="#群体的感情和道德观" class="headerlink" title="群体的感情和道德观"></a>群体的感情和道德观</h3>群体的冲动、易变和急躁</li>
+<li>孤立的个人具有主宰自己的反应行为的能力，群体则缺乏这种能力。</li>
+<li>群体根本不会做任何预先策划。他们可以先后被最矛盾的情感所激发，但是他们又总是受当前刺激因素的影响。</li>
+<li>群体不仅冲动而多变。就像野蛮人一样，它不准备承认，在自己的愿望和这种愿望的实现之间会出现任何障碍，它没有能力理解这种中间障碍，因为数量上的强大使它感到自己势不可挡。</li>
+</ul>
+<p>群体的易受暗示和轻信</p>
+<ul>
+<li>群体通常总是处在一种期待注意的状态中，因此很容易受人暗示。最初的提示，通过相互传染的过程，会很快进入群体中所有人的头脑，群体感情的一致倾向会立刻变成一个既成事实。</li>
+<li>正如所有处在暗示影响下的个人所示，进入大脑的念头很容易变成行动。一切都取决于刺激因素的性质，而不再像孤立的个人那样，取决于受到暗示的行动与全部理由之间的关系，后者可能与采取这种行动极为对立。</li>
+<li>群体对自己看到的事件进行歪曲的方式，好像既多且杂，各不相同，因为组成群体的个人有着非常不同的倾向。但是情况并非如此。作为相互传染的结果，受到的歪曲是一样的，在群体中所有个人表现出同样的状态。</li>
+<li>群体中的某个人对真相的第一次歪曲，是传染性暗示过程的起点。暗示的起点一般都是某个人多少有些模糊的记忆所产生的幻觉，在这一最初的幻觉得到肯定之后，就会引起相互传染。</li>
+</ul>
+<p>群体情绪的夸张与单纯</p>
+<ul>
+<li>群体中的个人不能作出细致的区分，他把事情视为一个整体，看不到它们的中间过渡状态。群体情绪的简单和夸张所造成的结果是，它全然不知怀疑和不确定性为何物。</li>
+<li>不幸的是，群体的这种夸张倾向，常常作用于一些恶劣的感情。它们是原始人的本能隔代遗传的残留，孤立而负责的个人因为担心受罚，不得不对它们有所约束。因此群体很容易干出最恶劣的极端勾当。</li>
+<li>群体因为夸大自己的感情，因此它只会被极端感情所打动。</li>
+</ul>
+<p>群体的偏执、专横和保守 </p>
+<ul>
+<li>群体只知道简单而极端的感情；提供给他们的各种意见、想法和信念，他们或者全盘接受，或者一概拒绝，将其视为绝对真理或绝对谬论。</li>
+<li>对何为真理何为谬误不容怀疑，另一方面，又清楚地意识到自己的强大， 群体便给自己的理想和偏执赋予了专横的性质。</li>
+<li>专横和偏执是一切类型的群体的共性，但是其强度各有不同。在这个方面，支配着人们感情和思想的基本的种族观念，会一再表现出来。</li>
+<li>专横和偏执是群体有着明确认识的感情，他们很容易产生这种感情，而且只要有人在他们中间煽动起这种情绪，他们随时都会将其付诸实践。</li>
+<li>对一切传统的迷恋与崇敬是绝对的；对一切有可能改变自身生活基本状态的新事物，有着根深蒂固的无意识恐惧。</li>
+</ul>
+<p>群体的道德</p>
+<ul>
+<li>孤立的个人在生活中满足野蛮和破坏性的本能是很危险的，但是当 他加入一个不负责任的群体时，因为很清楚不会受到惩罚，他便会彻底放纵这种本能。</li>
+<li>群体可以无恶不作，但是也能表现出极崇高的献身、牺牲和不计名利的举动，即孤立的个人根本做不到的极崇高的行为。 以名誉、光荣和爱国主义作为号召，最有可能影响到组成群体的个人，而且经常可以达到使他慷慨赴死的地步。</li>
+</ul>
+<h3 id="群体的观念、推理与想象力"><a href="#群体的观念、推理与想象力" class="headerlink" title="群体的观念、推理与想象力"></a>群体的观念、推理与想象力</h3><ul>
+<li>观念可以分为两类。一类是那些因一时的环境影响来去匆匆的观念，譬如那些只会让个人或某种理论着迷的观念。另一类是基本观念，它们因为环境、遗传规律和公众意见而具有极大的稳定性。过去的宗教观念，以及今天的社会主义和民主观念，都属于这类观念。</li>
+<li>给群体提供的无论是什么观念，只有当它们具有绝对的、毫不妥协的和简单明了的形式时，才能产生有效的影响。</li>
+<li>当观念通过不同的方式，终于深入到群体的头脑之中并且产生了一系列效果时，和它对抗是徒劳的。</li>
+<li>群体推理的特点，是把彼此不同，只在表面上相似的事物搅在一起，并且立刻把具体的事物普遍化。</li>
+<li>正像缺乏推理能力的人一样，群体形象化的想像力不但强大 而活跃，并且非常敏感。虚幻的因素对他们的影响几乎像现实一样大。他们有着对两者不加区分的明显倾向。</li>
+<li>群体并不进行推理，它对观念或是全盘接受，或是完全拒绝；对它产生影响的暗示，会彻底征服它的理解力，并且使它倾向于立刻变成行动。</li>
+</ul>
+<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><ul>
+<li>不要轻易成为集体的一份子，这样很容易被别有用心的人利用，即使你以为自己只不过是随声附和了一下而已，实际上你已经成了帮凶。</li>
+<li>人一到群体中，智商就严重降低，为了获得认可，个体愿意抛弃是非，用智商去换取那份让人倍感安全的归属感。</li>
+<li>我们始终有一种错觉，以为我们的感情源自于<strong>我们自己</strong>的内心。</li>
+<li>群体只会干两件事-锦上添花或落井下石。</li>
+<li>个人一旦成为群体的一员，他的所作所为就不会再承担责任，这时每个人都会暴露出自己不受到约束的一面。群体追求和相信的从来都不是什么真相和理性，而是盲从、残忍、偏执和狂热，只知道简单而极端的感情。</li>
+<li>我们以为自己是理性的，我们以为自己的一举一动是有其道理的。但事实上，我们的绝大多数日常行为，都是一些我们自己根本无法了解的隐藏动机 的结果。</li>
+<li>所谓的信仰，它能让一个人变得完全受自己的梦想奴役。</li>
+<li>在于理性永恒的冲突中，感情从未失过手。</li>
+<li>群众没有真正渴求过真理，面对那些不合口味的证据，他们会充耳不闻；凡是能向他们提供幻觉的，都可以很容易地成为他们的主人；凡是让他们幻灭的，都会成为他们的牺牲品。</li>
+<li>数量，即是正义</li>
+<li>掌握了影响群众想象力的艺术，也就掌握了统治他们的艺术。</li>
+</ul>
+</div></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">Andy Yin</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="http://yinzhm.gitee.io/2022/04/03/%E4%B9%8C%E5%90%88%E4%B9%8B%E4%BC%97/">http://yinzhm.gitee.io/2022/04/03/%E4%B9%8C%E5%90%88%E4%B9%8B%E4%BC%97/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="http://yinzhm.gitee.io">Andy Yin的个人空间</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/Gemini1996/assets@master/imgs/cover/cover-15.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js"></script></div></div><nav class="pagination_post" id="pagination"><div class="next-post pull-full"><a href="/2022/03/20/%E8%BF%90%E8%90%A5%E4%B9%8B%E5%85%89/"><img class="next_cover lazyload" data-src="https://cdn.jsdelivr.net/gh/Gemini1996/assets@master/imgs/cover/cover-10.jpg" onerror="onerror=null;src='https://cdn.jsdelivr.net/gh/Gemini1996/assets@master/imgs/blog/404.jpg'"><div class="label">下一篇</div><div class="next_info"><span>运营之光</span></div></a></div></nav><hr><div id="post-comment"><div class="comment_headling"><i class="fa fa-comments fa-fw" aria-hidden="true"></i><span> 评论</span></div><div class="vcomment" id="vcomment"></div><script src="https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js"></script><script>var notify = false == true ? true : false;
+var verify = false == true ? true : false;
+var GUEST_INFO = ['nick','mail','link'];
+var guest_info = 'nick,mail,link'.split(',').filter(function(item){
+  return GUEST_INFO.indexOf(item) > -1
+});
+guest_info = guest_info.length == 0 ? GUEST_INFO :guest_info;
+
+window.valine = new Valine({
+  el:'#vcomment',
+  notify:notify,
+  verify:verify,
+  appId:'vg1ALAcP6fVaieN3qWltnlg7-gzGzoHsz',
+  appKey:'0cALSC4fUb4x8aF6kUQxe5uF',
+  placeholder:'快来评论吧~',
+  avatar:'monsterid',
+  guest_info:guest_info,
+  pageSize:'10',
+  lang:'zh-cn',
+  recordIP: true
+});</script></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2019 - 2022 By Andy Yin</div><div class="framework-info"><span>驱动 </span><a href="http://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div><div class="footer_custom_text">Welcome to my blog!</div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><i class="fa fa-book" id="readmode" title="阅读模式"></i><i class="fa fa-plus" id="font_plus" title="放大字体"></i><i class="fa fa-minus" id="font_minus" title="缩小字体"></i><i class="darkmode fa fa-moon-o" id="darkmode" title="夜间模式"></i></div><div id="rightside-config-show"><div id="rightside_config" title="设置"><i class="fa fa-cog" aria-hidden="true"></i></div><a id="to_comment" href="#post-comment" title="直达评论"><i class="scroll_to_comment fa fa-comments">  </i></a><i class="fa fa-list-ul close" id="mobile-toc-button" title="目录" aria-hidden="true"></i><i class="fa fa-arrow-up" id="go-up" title="回到顶部" aria-hidden="true"></i></div></section><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script id="ribbon_piao" mobile="false" src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/piao.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@latest/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/lazysizes@latest/lazysizes.min.js" async=""></script><script src="https://cdn.jsdelivr.net/gh/jerryc127/butterfly_cdn@2.1.0/js/click_heart.js"></script><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章"></div></div></div><hr><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fa fa-times"></i></span></div><div class="search-mask"></div></body></html>
