@@ -451,7 +451,7 @@ var anzhiyu = {
       return;
     }
     const urlParams = new URLSearchParams(window.location.search);
-    const userId = "8152976493";
+    const userId = "8274607187";
     const userServer = "netease";
     const anMusicPageMeting = document.getElementById("anMusic-page-meting");
     if (urlParams.get("id") && urlParams.get("server")) {
@@ -709,7 +709,7 @@ var getTimeState = function () {
   );
 };
 
-document.getElementById("page-name").innerText = document.title.split(" | 安知鱼")[0];
+document.getElementById("page-name").innerText = document.title.split(" | Andy Yin")[0];
 anzhiyu.initIndexEssay();
 anzhiyu.changeTimeInEssay();
 anzhiyu.removeBodyPaceClass();
